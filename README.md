@@ -7,6 +7,7 @@ Contents
 * [Git](#git)
 * [Python](#python)
 * [iOS](#ios)
+* [HTML/CSS](#htmlcss)
 
 ## Git
 
@@ -42,3 +43,8 @@ Contents
 
 * [App Store Review Guidelines History](http://www.appstorereviewguidelineshistory.com/)
     * Highlights (literally) the changes between versions of Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+
+## HTML/CSS
+
+* [Font Awesome](https://fontawesome.com/?from=io)
+* [Google Fonts](https://fonts.google.com/)
