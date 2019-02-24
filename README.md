@@ -6,6 +6,7 @@ Contents
 
 * [Git](#git)
 * [Python](#python)
+* [iOS](#ios)
 
 ## Git
 
@@ -36,3 +37,8 @@ Contents
 * Metaclasses
     * [What are metaclasses in Python?](https://stackoverflow.com/q/100003/2745495)
     * [Python Metaclasses](https://realpython.com/python-metaclasses/)
+
+## iOS
+
+* [App Store Review Guidelines History](http://www.appstorereviewguidelineshistory.com/)
+    * Highlights (literally) the changes between versions of Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
