@@ -1,0 +1,28 @@
+[user]
+    name = my.name
+    email = my@email
+[core]
+    excludesfile = C:\\Users\\me\\.gitignore.txt
+    autocrlf = true
+    symlinks = true
+    commentChar = ";"
+[fetch]
+    prune = true
+[pull]
+    rebase = true
+[push]
+    default = simple
+[merge]
+    ff = false
+[alias]
+    b = branch --all
+    s = status --ignored
+    f = fetch -v
+    h = log --graph --date-order --date=short --pretty=format:'%C(auto)%h%d %C(reset)%s %C(bold blue)%cn %C(reset)%C(green)%cr (%cd)'
+    pl = pull -v
+    ps = push
+    whenadded = log --diff-filter=A
+    checkmerge = diff HEAD HEAD^1
+    hide = update-index --assume-unchanged
+    unhide = update-index --no-assume-unchanged
+    hidden = !git ls-files -v | grep "^[a-z]"
