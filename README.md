@@ -1,6 +1,6 @@
 # How-To
 
-This is a list of links to tutorials, templates, FAQs, usage guides, tips and tricks, tools, and other helpful resources and references.
+This is a list of links to tutorials, templates, FAQs, usage guides, tips and tricks, programming tools, and other helpful resources that I regularly use as reference during development.
 
 Contents
 
@@ -8,6 +8,7 @@ Contents
 * [Python](#python)
 * [iOS](#ios)
 * [HTML/CSS](#htmlcss)
+* [Heroku](#heroku)
 
 ## Git
 
@@ -26,7 +27,7 @@ Contents
 
 ## Python
 
-* [MUST READ before anything else](https://docs.python.org/3/faq/programming.html)
+* [The FAQ list every Python developer MUST READ](https://docs.python.org/3/faq/programming.html)
 * Coding Conventions
     * [PEP8](https://www.python.org/dev/peps/pep-0008/)
     * [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
@@ -42,9 +43,17 @@ Contents
 ## iOS
 
 * [App Store Review Guidelines History](http://www.appstorereviewguidelineshistory.com/)
-    * Highlights (literally) the changes between versions of Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+    * Highlights (literally) the changes when Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 
 ## HTML/CSS
 
 * [Font Awesome](https://fontawesome.com/?from=io)
 * [Google Fonts](https://fonts.google.com/)
+
+## Heroku
+
+* Setup
+    * [How to link a folder with an existing Heroku app?](https://stackoverflow.com/q/5129598/2745495)
+* Troubleshooting
+    * `git push heroku master` problems
+        * [*Permission denied (publickey)*](https://stackoverflow.com/q/4269922/2745495)
