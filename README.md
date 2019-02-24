@@ -5,6 +5,7 @@ This is a list of links to tutorials, templates, FAQs, usage guides, tips and tr
 Contents
 
 * [Git](#git)
+* [Visual Studio Code](#visual-studio-code)
 * [Python](#python)
 * [iOS](#ios)
 * [HTML/CSS](#htmlcss)
@@ -24,6 +25,68 @@ Contents
         * [for Windows](./git/gitconfig/windows/.gitconfig)
     * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
         * How to ensure that Git does not screw up your code when working on both Unix, Linux, or Mac (which use `LF`) and Windows (which uses `CRLF`)
+
+## Visual Studio Code
+
+* Settings
+    * Enable auto-trimming of whitespaces to prevent unnecessary file changes
+        ```json
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true,
+        ```
+    * Enable [linting of Python files](https://code.visualstudio.com/docs/python/linting)
+        * PEP8
+        * Pylint
+    * Customize color indicators in Explorer
+        ```json
+        "workbench.colorCustomizations": {
+            "editorWarning.foreground": "#fff333",
+            "gitDecoration.ignoredResourceForeground": "#635e5e",
+            "gitDecoration.untrackedResourceForeground": "#0099ff",
+            "gitDecoration.modifiedResourceForeground": "#00ff2aaf"
+        },
+        ```
+* Keybindings
+    * Set back-forward navigation (helpful when jumping to definition)
+        * on Mac:
+        ```json
+        {
+            "key": "cmd+left",
+            "command": "workbench.action.navigateBack"
+        },
+        {
+            "key": "cmd+right",
+            "command": "workbench.action.navigateForward"
+        },
+        ```
+        * on Windows:
+        ```json
+        {
+            "key": "alt+left",
+            "command": "workbench.action.navigateBack"
+        },
+        {
+            "key": "alt+right",
+            "command": "workbench.action.navigateForward"
+        }
+        ```
+* Extensions
+    * General
+        * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
+        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+        * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+        * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
+        * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - show type-appropriate icons for files/folders in Explorer
+    * Python-specific
+        * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+    * HTML-specific
+        * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+    * Javascript-specific
+        * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+        * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+        * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
+
 
 ## Python
 
