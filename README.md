@@ -1,6 +1,6 @@
 # How-To
 
-This is a list of links to tutorials, templates, FAQs, usage guides, tips and tricks, programming tools, and other helpful resources that I regularly use as reference during development.
+A list of links to tutorials, templates, FAQs, usage guides, tips and tricks, programming tools, and other helpful resources.
 
 Contents
 
