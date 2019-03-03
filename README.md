@@ -35,11 +35,11 @@ Contents
         "files.trimTrailingWhitespace": true,
         ```
     * Enable [linting of Python files](https://code.visualstudio.com/docs/python/linting)
-        * PEP8
-        * Pylint
     * Customize color indicators in Explorer
         ```json
         "workbench.colorCustomizations": {
+            "list.errorForeground": "#f66",
+            "list.warningForeground": "#fff333",
             "editorWarning.foreground": "#fff333",
             "gitDecoration.ignoredResourceForeground": "#635e5e",
             "gitDecoration.untrackedResourceForeground": "#0099ff",
