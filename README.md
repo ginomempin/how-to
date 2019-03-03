@@ -87,21 +87,43 @@ Contents
         * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
 
-
 ## Python
 
-* [The FAQ list every Python developer MUST READ](https://docs.python.org/3/faq/programming.html)
+* FAQ
+    * [The FAQ list every Python developer MUST first read](https://docs.python.org/3/faq/programming.html)
+    * [How does `import` work?](https://docs.python.org/3/tutorial/modules.html#the-module-search-path)
+    * Public and Private
+        * [Why are Python's 'private' methods not actually private?](https://stackoverflow.com/q/70528/2745495)
+        * [What is the meaning of a single and a double underscore before an object name?](https://stackoverflow.com/q/1301346/2745495)
+    * Metaclasses
+        * [What are metaclasses?](https://stackoverflow.com/q/100003/2745495)
+        * [How to use metaclasses?](https://realpython.com/python-metaclasses/)
 * Coding Conventions
     * [PEP8](https://www.python.org/dev/peps/pep-0008/)
     * [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
-* Modules and Packages
-    * [The Module Search Path](https://docs.python.org/3/tutorial/modules.html#the-module-search-path)
-* Public and Private
-    * [Why are Python's 'private' methods not actually private?](https://stackoverflow.com/q/70528/2745495)
-    * [What is the meaning of a single and a double underscore before an object name?](https://stackoverflow.com/q/1301346/2745495)
-* Metaclasses
-    * [What are metaclasses in Python?](https://stackoverflow.com/q/100003/2745495)
-    * [Python Metaclasses](https://realpython.com/python-metaclasses/)
+* Notable Packages and Utilities
+    * [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
+        * Using a **virtualenv** allows:
+            * Different Python projects to use different packages
+            * Different Python projects to use the same packages but different versions
+            * Separation from the OS system packages
+            * Easy tracking of which *exact* packages does the project depend on
+        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html).
+            * `mkvirtualenv`
+            * `lsvirtualenv`
+            * `lssitepackages`
+            * `workon`
+            * `deactivate`
+        * Add the following to your environment's **.bash_profile** (or its equivalent):
+            ```bash
+            export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+            export WORKON_HOME=~/.virtualenvs
+            source /usr/local/bin/virtualenvwrapper.sh
+            ```
+    * [pylint](https://www.pylint.org/) - for linting Python code
+        * [Integration with Visual Studio Code](https://code.visualstudio.com/docs/python/linting#_pylint)
+    * [click](https://click.palletsprojects.com) - for creating CLI-based applications
+    * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for building distributable Python packages or applications
 
 ## iOS
 
