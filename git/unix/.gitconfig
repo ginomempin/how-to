@@ -24,7 +24,7 @@
     s = status --ignored
     h = log --graph --date-order --date=short --pretty=format:'%C(auto)%h%d %C(reset)%s %C(bold blue)%cn %C(reset)%C(green)%cr (%cd)'
     l = log --show-signature
-    f = fetch -v
+    f = fetch -v origin
     pl = pull -v
     ps = push
     whenadded = log --diff-filter=A
