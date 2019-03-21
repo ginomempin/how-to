@@ -4,13 +4,13 @@ A short description of what the project is all about.
 
 Contents
 
-* [Environment](#environment)
+* [Dependencies](#dependencies)
 * [Setup](#setup)
 * [Run](#run)
-* [Troubleshooting](#troubleshooting)
+* [Issues](#issues)
 * [References](#references)
 
-## Environment
+## Dependencies
 
 * Development Environment
     * Libraries
@@ -30,9 +30,10 @@ Contents
 * How to use the application
 * ..
 
-## Troubleshooting
+## Known Issues
 
-* Steps to do if something is not working right
+* List of known issues and troubleshooting steps
+* Link to the ISSUES.md file
 
 ## References
 
