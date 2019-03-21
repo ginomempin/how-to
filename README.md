@@ -106,11 +106,11 @@ Contents
 * Notable Packages and Utilities
     * [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
         * Using a **virtualenv** allows:
-            * Different Python projects to use different packages
-            * Different Python projects to use the same packages but different versions
+            * Different projects to use different packages
+            * Different projects to use the same packages but different versions
             * Separation from the OS system packages
             * Easy tracking of which *exact* packages does the project depend on
-        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html).
+        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html):
             * `mkvirtualenv`
             * `lsvirtualenv`
             * `lssitepackages`
@@ -124,8 +124,9 @@ Contents
             ```
     * [pylint](https://www.pylint.org/) - for linting Python code
         * [Integration with Visual Studio Code](https://code.visualstudio.com/docs/python/linting#_pylint)
+    * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for distributing Python packages or scripts
     * [click](https://click.palletsprojects.com) - for creating CLI-based applications
-    * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for building distributable Python packages or applications
+    * [tqdm](https://tqdm.github.io/) - for better progress bars and loop tracking
 
 ## iOS
 
