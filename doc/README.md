@@ -6,7 +6,7 @@ Contents
 
 * [Dependencies](#dependencies)
 * [Setup](#setup)
-* [Run](#run)
+* [Usage](#usage)
 * [Issues](#issues)
 * [References](#references)
 
@@ -25,7 +25,7 @@ Contents
 * How to install the application
 * ..
 
-## Run
+## Usage
 
 * How to use the application
 * ..
