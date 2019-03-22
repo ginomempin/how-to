@@ -30,7 +30,7 @@ Contents
 * How to use the application
 * ..
 
-## Known Issues
+## Issues
 
 * List of known issues and troubleshooting steps
 * Link to the ISSUES.md file
