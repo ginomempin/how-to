@@ -6,6 +6,7 @@ Contents
 
 * [Git](#git)
 * [Visual Studio Code](#visual-studio-code)
+* [Docker](#docker)
 * [Python](#python)
 * [iOS](#ios)
 * [HTML/CSS](#htmlcss)
@@ -88,6 +89,10 @@ Contents
         * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
         * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
+
+## Docker
+
+* [5 part Docker series, beginner to master](https://dev.to/softchris/5-part-docker-series-beginner-to-master-3m1b)
 
 ## Python
 
