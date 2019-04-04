@@ -108,6 +108,8 @@ Contents
 * Coding Conventions
     * [PEP8](https://www.python.org/dev/peps/pep-0008/)
     * [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)
+* Package Management
+    * [Managing Python packages the right way](https://opensource.com/article/19/4/managing-python-packages)
 * Notable Packages and Utilities
     * [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
         * Using a **virtualenv** allows:
