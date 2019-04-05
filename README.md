@@ -76,19 +76,25 @@ Contents
 * Extensions
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
-        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
         * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
         * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
-        * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=robertohuertasm.vscode-icons) - show type-appropriate icons for files/folders in Explorer
-    * Python-specific
+    * Git
+        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
+        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+    * Python
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
-    * HTML-specific
+    * HTML
         * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
-    * Javascript-specific
+        * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
+    * Javascript
         * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
         * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
+    * Docker
+        * [vscode-docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+    * Themes
+        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
+        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
 
 ## Docker
 
