@@ -104,6 +104,50 @@ Contents
 
 ## Python
 
+* Setup
+    1. Install Python 3
+        * On a Unix-based OS, the system's default Python installation might be Python 2. Check this by running `python --version` on a terminal. If this is so, install Python 3 but **DO NOT REMOVE/OVERWRITE/UNINSTALL** the old Python 2. The system uses Python 2 for its internal scripts and removing it may break the OS installation.
+        * Use [Homebrew](https://docs.brew.sh/Homebrew-and-Python) (also installs the appropriate `pip`)
+        * Verify the Python installation by running
+            ```bash
+            $ which python3
+            $ python3 --version
+
+            ```
+    1. Install [virtualenv](https://virtualenv.pypa.io/en/stable/)
+        * Do `pip install virtualenv`
+        * Using a **virtualenv** allows:
+            * Different projects to use different packages
+            * Different projects to use different versions of the same packages
+            * Separation between system-specific and project-specific packages
+            * Tracking of the dependencies of each project
+    1. Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/#)
+        * Do `pip install virtualenvwrapper`
+        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html):
+            * `mkvirtualenv`
+            * `lsvirtualenv`
+            * `lssitepackages`
+            * `workon`
+            * `deactivate`
+    1. Create the directory for storing Python virtual environments
+        ```bash
+        $ mkdir -p ~/.virtualenvs
+
+        ```
+    1. Add the following to your environment's **.bash_profile** (or its equivalent):
+        ```bash
+        export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+        export WORKON_HOME=~/.virtualenvs
+        source /usr/local/bin/virtualenvwrapper.sh
+
+        ```
+    1. Create an environment for each project, ex. `mkvirtualenv myapp`
+    1. Activate the project's virtual environment, ex. `workon myapp`
+    1. Install project dependencies from [requirements.txt](./requirements.txt):
+        ```bash
+        $ pip install -r requirements.txt
+
+        ```
 * FAQ
     * [The FAQ list every Python developer MUST first read](https://docs.python.org/3/faq/programming.html)
     * [How does `import` work?](https://docs.python.org/3/tutorial/modules.html#the-module-search-path)
@@ -119,26 +163,9 @@ Contents
 * Package Management
     * [Managing Python packages the right way](https://opensource.com/article/19/4/managing-python-packages)
 * Notable Packages and Utilities
-    * [virtualenv](https://virtualenv.pypa.io/en/latest/) and [virtualenvwrapper](https://virtualenvwrapper.readthedocs.io/en/latest/)
-        * Using a **virtualenv** allows:
-            * Different projects to use different packages
-            * Different projects to use the same packages but different versions
-            * Separation from the OS system packages
-            * Easy tracking of which *exact* packages does the project depend on
-        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html):
-            * `mkvirtualenv`
-            * `lsvirtualenv`
-            * `lssitepackages`
-            * `workon`
-            * `deactivate`
-        * Add the following to your environment's **.bash_profile** (or its equivalent):
-            ```bash
-            export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-            export WORKON_HOME=~/.virtualenvs
-            source /usr/local/bin/virtualenvwrapper.sh
-            ```
-    * [pylint](https://www.pylint.org/) - for linting Python code
-        * [Integration with Visual Studio Code](https://code.visualstudio.com/docs/python/linting#_pylint)
+    * Linters
+        * [pep8](http://pep8.readthedocs.org/)
+        * [pylint](https://www.pylint.org/) ([Integration with Visual Studio Code](https://code.visualstudio.com/docs/python/linting#_pylint))
     * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for distributing Python packages or scripts
     * [click](https://click.palletsprojects.com) - for creating CLI-based applications
     * [tqdm](https://tqdm.github.io/) - for better progress bars and loop tracking
