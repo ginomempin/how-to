@@ -106,8 +106,8 @@ Contents
 
 * Setup
     1. Install Python 3
-        * On a Unix-based OS, the system's default Python installation might be Python 2. Check this by running `python --version` on a terminal. If this is so, install Python 3 but **DO NOT REMOVE/OVERWRITE/UNINSTALL** the old Python 2. The system uses Python 2 for its internal scripts and removing it may break the OS installation.
-        * Use [Homebrew](https://docs.brew.sh/Homebrew-and-Python) (also installs the appropriate `pip`)
+        * On a Unix-based OS, the system's default Python installation might be Python 2. Check this by running `python --version` on a terminal. If this is so, install Python 3 but **DO NOT REMOVE / OVERWRITE / UNINSTALL** the old Python 2. The system uses Python 2 for its internal scripts and removing it may break the OS installation.
+        * Use [Homebrew](https://docs.brew.sh/Homebrew-and-Python) (which also installs the appropriate `pip`)
         * Verify the Python installation by running
             ```bash
             $ which python3
