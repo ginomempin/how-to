@@ -31,13 +31,19 @@ Contents
 
 ## Visual Studio Code
 
-* Settings
+* General Settings
     * Enable auto-trimming of whitespaces to prevent unnecessary file changes
         ```json
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true,
+
         ```
-    * Enable [linting of Python files](https://code.visualstudio.com/docs/python/linting)
+    * Enable word wrapping
+        ```json
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 120,
+        "editor.wrappingIndent": "indent",
+        ```
     * Customize color indicators in Explorer
         ```json
         "workbench.colorCustomizations": {
@@ -47,11 +53,12 @@ Contents
             "gitDecoration.ignoredResourceForeground": "#635e5e",
             "gitDecoration.untrackedResourceForeground": "#0099ff",
             "gitDecoration.modifiedResourceForeground": "#00ff2aaf"
-        },
+        }
+
         ```
 * Keybindings
-    * Set back-forward navigation (helpful when jumping to definition)
-        * on Mac:
+    * Set back-forward navigation (helpful when jumping to definitions)
+        * Mac
         ```json
         {
             "key": "cmd+left",
@@ -62,7 +69,7 @@ Contents
             "command": "workbench.action.navigateForward"
         },
         ```
-        * on Windows:
+        * Windows
         ```json
         {
             "key": "alt+left",
@@ -72,16 +79,36 @@ Contents
             "key": "alt+right",
             "command": "workbench.action.navigateForward"
         }
+
         ```
-* Extensions
+    * Set keys for switching tabs
+        * Mac
+        ```json
+        {
+            "key": "ctrl+PageDown",
+            "command": "workbench.action.nextEditor"
+        },
+        {
+            "key": "ctrl+PageUp",
+            "command": "workbench.action.previousEditor"
+        },
+        ```
+* Extensions and Extension-Specific Settings
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
-        * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
         * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
+    * Documentation
+        * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
+        * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+        * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+    * Themes
+        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
+        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
     * Git
         * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
         * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
     * Python
+        * Enable [linting of Python files](https://code.visualstudio.com/docs/python/linting)
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
     * HTML
         * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
@@ -92,9 +119,6 @@ Contents
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
     * Docker
         * [vscode-docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
-    * Themes
-        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
-        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
 
 ## Docker
 
@@ -165,7 +189,7 @@ Contents
 * Notable Packages and Utilities
     * Linters
         * [pep8](http://pep8.readthedocs.org/)
-        * [pylint](https://www.pylint.org/) ([Integration with Visual Studio Code](https://code.visualstudio.com/docs/python/linting#_pylint))
+        * [pylint](https://www.pylint.org/)
     * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for distributing Python packages or scripts
     * [click](https://click.palletsprojects.com) - for creating CLI-based applications
     * [tqdm](https://tqdm.github.io/) - for better progress bars and loop tracking
