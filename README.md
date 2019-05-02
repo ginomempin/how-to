@@ -22,8 +22,8 @@ Contents
 * Configuration
     * [.gitignore templates](https://github.com/github/gitignore)
     * gitconfig
-        * [for Linux or Mac](./git/unix/.gitconfig)
-        * [for Windows](./git/windows/.gitconfig)
+        * [for Linux or Mac](./git/unix/config)
+        * [for Windows](./git/windows/config)
     * gpg-agent
         * [for Linux or Mac](./git/unix/gpg-agent.conf)
     * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
