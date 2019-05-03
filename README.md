@@ -22,10 +22,10 @@ Contents
 * Configuration
     * [.gitignore templates](https://github.com/github/gitignore)
     * .gitconfig
-        * [for Linux or Mac](./git/unix/config)
-        * [for Windows](./git/windows/config)
+        * [for Linux or Mac](./settings/git/unix/config)
+        * [for Windows](./settings/git/windows/config)
     * gpg-agent
-        * [for Linux or Mac](./git/unix/gpg-agent.conf)
+        * [for Linux or Mac](./settings/git/unix/gpg-agent.conf)
     * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
         * How to ensure that Git does not screw up your code when working on both Unix, Linux, or Mac (which use `LF`) and Windows (which uses `CRLF`)
 
