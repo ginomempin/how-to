@@ -203,7 +203,7 @@ Contents
 ## iOS
 
 * [App Store Review Guidelines History](http://www.appstorereviewguidelineshistory.com/)
-    * Highlights (literally) the changes when Apple's [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
+    * Highlights (literally) the changes when Apple updates their [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
 
 ## HTML/CSS
 
