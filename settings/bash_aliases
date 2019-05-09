@@ -1,0 +1,28 @@
+alias ls="ls -lh --group-directories-first --color=auto"
+
+alias up1="cd ../"
+alias up2="cd ../../"
+alias up3="cd ../../../"
+alias up4="cd ../../../../"
+alias up5="cd ../../../../../"
+
+alias find-links="find . -type l | xargs ls -l --color=auto"
+
+# If the zip has files with Japanese filenames, using the
+# regular unzip will garble the Japanese characters. Use
+# this to preserve filenames.
+alias unzip-ja="unzip -O cp932 $1"
+
+# When using a local registry, there might not be a clear
+# way of knowing what images are already stored there. This
+# aliases can be used to query available images and tags.
+function docker-query-images {
+  echo "Querying list of images from $1"
+  curl --insecure $1/v2/_catalog
+}
+function docker-query-image-tags {
+  echo "Querying list of tags from $1/$2"
+  curl --insecure $1/v2/$2/tags/list
+}
+export -f docker-query-images
+export -f docker-query-image-tags

@@ -212,9 +212,10 @@ Contents
 
 ## Bash
 
-* Before creating any script:
-    * Copy the [utils.sh](./templates/utils.sh) to hold common functions
-    * Copy the [template.sh](./templates/template.sh) to serve as the base format
+* [Command Aliases](./settings/bash_aliases)
+* Script Templates
+    * [utils.sh](./templates/utils.sh): for holding common functions
+    * [template.sh](./templates/template.sh): base format for all other scripts
 
 ## Heroku
 
