@@ -10,6 +10,7 @@ Contents
 * [Python](#python)
 * [iOS](#ios)
 * [HTML/CSS](#htmlcss)
+* [Bash](#bash)
 * [Heroku](#heroku)
 
 ## Git
@@ -208,6 +209,12 @@ Contents
 
 * [Font Awesome](https://fontawesome.com/?from=io)
 * [Google Fonts](https://fonts.google.com/)
+
+## Bash
+
+* Before creating any script:
+    * Copy the [utils.sh](./templates/utils.sh) to hold common functions
+    * Copy the [template.sh](./templates/template.sh) to serve as the base format
 
 ## Heroku
 
