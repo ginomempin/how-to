@@ -16,8 +16,8 @@ source ${PROJECT_ROOT}/path/to/utils.sh
 function show_usage()
 {
     USAGE \
-"Describe the purpose of the script.\n \
-The description can span multiple lines with correct '\n' placements." \
+"Describe the purpose of the script.\n\
+The description can span multiple lines with correct '\n\' placements." \
         "required|script|parameters" \
         "--option1: Option1 description" \
         "--option2: Option2 description" \
