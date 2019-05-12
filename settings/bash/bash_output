@@ -1,0 +1,20 @@
+
+# Format the output of the `history` command.
+# Shows up as:
+#  215  May 12 19:44:54 pip freeze > requirements.txt
+#  216  May 12 19:44:54 mv requirements.txt ../../.
+#  227  May 12 19:44:54 pip show urllib3
+#  218  May 12 19:44:54 pip install urllib3==1.24.2
+#  219  May 12 19:44:54 pip3 freeze > requirements.txt
+export HISTTIMEFORMAT="%h %d %H:%M:%S "
+
+# Format the terminal colors
+export TERM=xterm-color
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1:32'
+export CLICOLOR=1
+export LSCOLORS=gxfxcxdxacegedabagacad
+
+# Format the prompt
+# Shows up as:
+#   machine-name@current-working-directory$
+PS1='\[\e[1;33m\]\u@\W\$\[\e[0m\] '

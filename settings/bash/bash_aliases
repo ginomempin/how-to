@@ -1,3 +1,4 @@
+
 alias ls="ls -lh --group-directories-first --color=auto"
 
 alias up1="cd ../"

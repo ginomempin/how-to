@@ -23,10 +23,10 @@ Contents
 * Configuration
     * [.gitignore templates](https://github.com/github/gitignore)
     * .gitconfig
-        * [for Linux or Mac](./settings/git/unix/config)
-        * [for Windows](./settings/git/windows/config)
-    * gpg-agent
-        * [for Linux or Mac](./settings/git/unix/gpg-agent.conf)
+        * [For Linux or Mac](./settings/git/unix/config)
+        * [For Windows](./settings/git/windows/config)
+    * gpg-agent.conf
+        * [For Linux or Mac](./settings/git/unix/gpg-agent.conf)
     * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
         * How to ensure that Git does not screw up your code when working on both Unix, Linux, or Mac (which use `LF`) and Windows (which uses `CRLF`)
 
@@ -214,7 +214,8 @@ Contents
 
 ## Bash
 
-* [Command Aliases](./settings/bash_aliases)
+* [Terminal Aliases](./settings/bash/bash_aliases)
+* [Terminal Output Formatting](./settings/bash/bash_output)
 * Script Templates
     * [utils.sh](./templates/utils.sh): for holding common functions
     * [template.sh](./templates/template.sh): base format for all other scripts
