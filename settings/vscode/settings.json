@@ -1,0 +1,17 @@
+{
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.wrappingIndent": "indent",
+
+    "workbench.colorCustomizations": {
+        "list.errorForeground": "#f66",
+        "list.warningForeground": "#fff333",
+        "editorWarning.foreground": "#fff333",
+        "gitDecoration.ignoredResourceForeground": "#635e5e",
+        "gitDecoration.untrackedResourceForeground": "#0099ff",
+        "gitDecoration.modifiedResourceForeground": "#00ff2aaf"
+    }
+}

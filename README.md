@@ -32,68 +32,13 @@ Contents
 
 ## Visual Studio Code
 
-* General Settings
+* [General Settings](./settings/vscode/settings.json)
     * Enable auto-trimming of whitespaces to prevent unnecessary file changes
-        ```json
-        "files.trimFinalNewlines": true,
-        "files.trimTrailingWhitespace": true,
-
-        ```
     * Enable word wrapping
-        ```json
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 120,
-        "editor.wrappingIndent": "indent",
-        ```
     * Customize color indicators in Explorer
-        ```json
-        "workbench.colorCustomizations": {
-            "list.errorForeground": "#f66",
-            "list.warningForeground": "#fff333",
-            "editorWarning.foreground": "#fff333",
-            "gitDecoration.ignoredResourceForeground": "#635e5e",
-            "gitDecoration.untrackedResourceForeground": "#0099ff",
-            "gitDecoration.modifiedResourceForeground": "#00ff2aaf"
-        }
-
-        ```
-* Keybindings
+* Keybindings ([Mac](./settings/vscode/keybindings.mac.json), [Linux](./settings/vscode/keybindings.linux.json))
     * Set back-forward navigation (helpful when using go-to-definitions)
-        * Mac
-        ```json
-        {
-            "key": "cmd+left",
-            "command": "workbench.action.navigateBack"
-        },
-        {
-            "key": "cmd+right",
-            "command": "workbench.action.navigateForward"
-        },
-        ```
-        * Windows
-        ```json
-        {
-            "key": "alt+left",
-            "command": "workbench.action.navigateBack"
-        },
-        {
-            "key": "alt+right",
-            "command": "workbench.action.navigateForward"
-        }
-
-        ```
     * Set keys for switching tabs
-        * Mac
-        ```json
-        {
-            "key": "ctrl+PageDown",
-            "command": "workbench.action.nextEditor"
-        },
-        {
-            "key": "ctrl+PageUp",
-            "command": "workbench.action.previousEditor"
-        },
-        ```
 * Extensions and Extension-Specific Settings
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
