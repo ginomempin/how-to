@@ -21,6 +21,8 @@ Contents
     * [Git Gud](https://nic-hartley.github.io/git-gud/)
         * "*Git Gud is a web-based Git simulator. It shows you the git tree visually, and you can run commands to show you what they do to the tree*." ([source](https://dev.to/nichartley/git-gud-at-git-5d9k))
 * Configuration
+    * [Oh shit, git!](https://ohshitgit.com/)
+        * What to do when you did something wrong
     * [.gitignore templates](https://github.com/github/gitignore)
     * .gitconfig
         * [For Linux or Mac](./settings/git/unix/config)
