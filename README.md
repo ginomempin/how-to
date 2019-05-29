@@ -93,14 +93,14 @@ Contents
 
             ```
     1. Install [virtualenv](https://virtualenv.pypa.io/en/stable/)
-        * Do `pip install virtualenv`
+        * Do `pip3 install virtualenv`
         * Using a **virtualenv** allows:
             * Different projects to use different packages
             * Different projects to use different versions of the same packages
             * Separation between system-specific and project-specific packages
             * Tracking of the dependencies of each project
     1. Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/#)
-        * Do `pip install virtualenvwrapper`
+        * Do `pip3 install virtualenvwrapper`
         * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html):
             * `mkvirtualenv`
             * `lsvirtualenv`
