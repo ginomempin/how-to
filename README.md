@@ -45,6 +45,7 @@ Contents
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
         * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
+        * [section-divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections
         * Use [Hack](https://github.com/source-foundry/Hack) for the font
             * Provides consistent monospaced font for Windows, Mac, or Ubuntu
             * Distinguishes between zeroes from letter O's
