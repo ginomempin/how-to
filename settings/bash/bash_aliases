@@ -7,6 +7,7 @@ alias up3="cd ../../../"
 alias up4="cd ../../../../"
 alias up5="cd ../../../../../"
 
+# Find all symbolic links in the current directory.
 alias find-links="find . -type l | xargs ls -l --color=auto"
 
 # If the zip has files with Japanese filenames, using the
@@ -27,3 +28,27 @@ function docker-query-image-tags {
 }
 export -f docker-query-images
 export -f docker-query-image-tags
+
+# Set the tab title (for Ubuntu Terminal)
+function set-tab-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=${PS1}
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
+export -f set-tab-title
+
+# Convenience functions for setting/resetting PYTHONPATH.
+# Useful when integrating with other aliases.
+#   Ex. alias prepare-env="pythonpath-append lib; do-other-stuff"
+function pythonpath-reset {
+  export PYTHONPATH=
+  echo $PYTHONPATH
+}
+function pythonpath-append {
+  export PYTHONPATH=$PYTHONPATH:$1
+  echo $PYTHONPATH
+}
+export -f pythonpath-reset
+export -f pythonpath-append
