@@ -45,18 +45,22 @@ Contents
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
         * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
-        * [section-divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections
+        * [section-divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections with comment headers
+        * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) - access specific sections of long codes
+        * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - auto-populate new files with template code
         * Use [Hack](https://github.com/source-foundry/Hack) for the font
             * Provides consistent monospaced font for Windows, Mac, or Ubuntu
             * Distinguishes between zeroes from letter O's
             * Distinguishes between letter I's and letter L's
+    * Themes
+        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
+        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
     * Documentation
         * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
         * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
         * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
-    * Themes
-        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
-        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
+    * Debugging
+        * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
         * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
         * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
