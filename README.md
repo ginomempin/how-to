@@ -84,6 +84,8 @@ Contents
     * [How to deploy a local registry](https://docs.docker.com/registry/deploying/)
 * Tutorials
     * [5 part Docker series, beginner to master](https://dev.to/softchris/5-part-docker-series-beginner-to-master-3m1b)
+* Tools
+    * [lazydocker](https://github.com/jesseduffield/lazydocker) - console-based dashboard
 
 ## Python
 
