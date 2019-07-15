@@ -15,5 +15,15 @@
     {
         "key": "ctrl+PageUp",
         "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+pagedown",
+        "command": "workbench.action.terminal.focus",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+pageup",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
     }
 ]
