@@ -151,10 +151,12 @@ Contents
     * Linters
         * [pep8](http://pep8.readthedocs.org/)
         * [pylint](https://www.pylint.org/)
+    * [ipython](https://ipython.readthedocs.io/en/stable/index.html) - enhanced interactive Python shell
     * [setuptools](https://setuptools.readthedocs.io/en/latest/setuptools.html) - for distributing Python packages or scripts
     * [click](https://click.palletsprojects.com) - for creating CLI-based applications
     * [tqdm](https://tqdm.github.io/) - for better progress bars and loop tracking
-    * [ipython](https://ipython.readthedocs.io/en/stable/index.html) - enhanced interactive Python shell
+    * [flask](https://flask.palletsprojects.com/) - lightweight web application framework
+    * [bokeh](https://bokeh.pydata.org/en/latest/) - interactive data visualization for modern web browsers
 
 ## iOS
 
