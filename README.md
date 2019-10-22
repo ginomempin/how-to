@@ -61,6 +61,7 @@ Contents
     * Documentation
         * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
         * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - convert Markdown files to PDF
+        * [Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
         * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
         * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
     * Debugging
