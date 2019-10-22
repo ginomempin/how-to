@@ -35,11 +35,15 @@ Contents
 ## Visual Studio Code
 
 * [General Settings](./settings/vscode/settings.json)
-    * Enable auto-trimming of whitespaces to prevent unnecessary file changes
-    * Enable word wrapping
-    * Customize color indicators in Explorer
+    * Font
+    * Indentation and Whitespace Control
+    * Word Wrapping
+    * Intellisense
+    * Linting
+    * Color Customization
 * Keybindings ([Mac](./settings/vscode/keybindings.mac.json), [Linux](./settings/vscode/keybindings.linux.json))
     * Set back-forward navigation (helpful when using go-to-definitions)
+    * Set keys for switching between the terminal and the editor
     * Set keys for switching tabs
 * Extensions and Extension-Specific Settings
     * General

@@ -7,7 +7,6 @@
         "key": "cmd+right",
         "command": "workbench.action.navigateForward"
     },
-
     {
         "key": "ctrl+PageDown",
         "command": "workbench.action.nextEditor"

@@ -1,11 +1,107 @@
 {
+    // Navigation
+    //
+    // See: https://code.visualstudio.com/updates/v1_26#_breadcrumbs
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "last",
+    "breadcrumbs.symbolSortOrder": "name",
+
+    // Whitespaces
+    //
+    // This prevents unnecessary changes to version-controlled files
+    // that show up in `git diff` or some other diff tool.
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
 
+    // Font
+    //
+    // Hack provides a font for source codes that is consistent
+    // across different OS (Mac, Linux, Windows). It makes it
+    // easy to differentiate glyphs like zeroes and the letter O,
+    // lowercase 'l' and uppercase 'I', and punctuation marks.
+    // https://source-foundry.github.io/Hack/font-specimen.html
+    "editor.fontFamily": "Hack",
+    "terminal.integrated.fontFamily": "Hack",
+
+    // Indentation
+    //
+    // Always use spaces
+    // Tabs will insert 4 spaces
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    // Word Wrapping
+    //
+    // Set max line length to 120
+    // Wrapped lines are visually indented
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "indent",
 
+    // File Explorer
+    //
+    // List files first before folders
+    // Show indent guides to visually see which files belong
+    // to which folder
+    "explorer.sortOrder": "filesFirst",
+    "workbench.tree.renderIndentGuides": "always",
+
+    // Version Control
+    //
+    // Enable sigining git commits with GPG
+    "git.enableCommitSigning": true,
+
+    // Markdown Linting
+    "markdownlint.run": "onSave",
+    "markdownlint.config": {
+        "MD007": false,
+        "MD014": false,
+        "MD024": false,
+        "MD026": false,
+        "MD031": false,
+        "MD032": false,
+        "MD040": false
+    },
+
+    // Python Intellisense
+    //
+    // Use Microsoft's Python Analysis Engine which,
+    // for most use cases, is faster than Jedi.
+    // See: https://devblogs.microsoft.com/python/python-in-visual-studio-code-june-july-2018-release/
+    "python.jediEnabled": false,
+
+    // Python Linting
+    //
+    // For pylint, enable all warnings (UseMinimalCheckers=false)
+    // then manually disable/ignore specific ones. This provides
+    // more control over the default where pylint will enable or
+    // disable "normal use case" settings.
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.pycodestyleArgs": [
+        "--ignore=E116,E201,E202,E203,E221,E402,E501"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintUseMinimalCheckers": false,
+    "python.linting.pylintCategorySeverity.convention": "Hint",
+    "python.linting.pylintArgs": [
+        "--disable=bad-whitespace",
+        "--disable=bare-except",
+        "--disable=fixme",
+        "--disable=global-statement",
+        "--disable=invalid-name",
+        "--disable=len-as-condition",
+        "--disable=missing-docstring",
+        "--disable=redefined-outer-name",
+        "--disable=superfluous-parens",
+    ],
+
+    // Colors
+    //
+    // Many colors of the VS Code UI can be customized.
+    // Here, change the colors for erros and warnings,
+    // and differentiate ignored, untracked, and modified
+    // git files.
     "workbench.colorCustomizations": {
         "list.errorForeground": "#f66",
         "list.warningForeground": "#fff333",
