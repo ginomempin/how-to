@@ -45,8 +45,7 @@ Contents
     * General
         * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
         * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
-        * [section-divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections with comment headers
-        * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks) - access specific sections of long codes
+        * [Section Divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections with comment headers
         * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - auto-populate new files with template code
         * Use [Hack](https://github.com/source-foundry/Hack) for the font
             * Provides consistent monospaced font for Windows, Mac, or Ubuntu
@@ -57,25 +56,31 @@ Contents
         * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
     * Documentation
         * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-        * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
-        * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+        * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - convert Markdown files to PDF
+        * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
+        * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
     * Debugging
+        * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
-        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame)
-        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
+        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - see `git blame` info on the status bar
+        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - view `git log` and `git diff`'s
     * Python
-        * Enable [linting of Python files](https://code.visualstudio.com/docs/python/linting)
+        * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
+            * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
+    * C/C++
+        * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - linting, debugging, intellisense, formatting
+        * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) and [CMake Tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools)
     * HTML
-        * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
+        * [Auto Complete Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag)
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
     * Javascript
         * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
         * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
     * Docker
-        * [vscode-docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+        * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 
 ## Docker
 
