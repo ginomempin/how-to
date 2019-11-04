@@ -133,12 +133,13 @@ Contents
             $ pip freeze > requirements.txt
 
             ```
-        * Create the virtual environment
+        * Create a virtual environment
         * Install the project dependencies from the *requirements.txt*:
             ```shell
             $ pip install -r requirements.txt
 
             ```
+        * When working on a project, *always* activate the virtual environment
 * FAQ
     * [The FAQ list every Python developer MUST first read](https://docs.python.org/3/faq/programming.html)
     * [How does `import` work?](https://docs.python.org/3/tutorial/modules.html#the-module-search-path)
