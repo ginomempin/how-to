@@ -1,12 +1,15 @@
 
+# NAVIGATION
+# ---------------------------------------------------------
 alias ls="ls -lh --group-directories-first --color=auto"
-
 alias up1="cd ../"
 alias up2="cd ../../"
 alias up3="cd ../../../"
 alias up4="cd ../../../../"
 alias up5="cd ../../../../../"
 
+# CONVENIENCE COMMANDS
+# ---------------------------------------------------------
 # Find all symbolic links in the current directory.
 alias find-links="find . -type l | xargs ls -l --color=auto"
 
@@ -15,6 +18,20 @@ alias find-links="find . -type l | xargs ls -l --color=auto"
 # this to preserve filenames.
 alias unzip-ja="unzip -O cp932 $1"
 
+# TERMINAL CONFIGURATION
+# ---------------------------------------------------------
+# Set the tab title (for Ubuntu Terminal)
+function set-tab-title() {
+  if [[ -z "$ORIG" ]]; then
+    ORIG=${PS1}
+  fi
+  TITLE="\[\e]2;$*\a\]"
+  PS1=${ORIG}${TITLE}
+}
+export -f set-tab-title
+
+# DOCKER
+# ---------------------------------------------------------
 # When using a local registry, there might not be a clear
 # way of knowing what images are already stored there. This
 # aliases can be used to query available images and tags.
@@ -29,16 +46,8 @@ function docker-query-image-tags {
 export -f docker-query-images
 export -f docker-query-image-tags
 
-# Set the tab title (for Ubuntu Terminal)
-function set-tab-title() {
-  if [[ -z "$ORIG" ]]; then
-    ORIG=${PS1}
-  fi
-  TITLE="\[\e]2;$*\a\]"
-  PS1=${ORIG}${TITLE}
-}
-export -f set-tab-title
-
+# PYTHON
+# ---------------------------------------------------------
 # Convenience functions for setting/resetting PYTHONPATH.
 # Useful when integrating with other aliases.
 #   Ex. alias prepare-env="pythonpath-append lib; do-other-stuff"
@@ -52,3 +61,16 @@ function pythonpath-append {
 }
 export -f pythonpath-reset
 export -f pythonpath-append
+
+# PYTHON VENV
+# ---------------------------------------------------------
+export VENV_DIR=$HOME/.venvs
+function mkvenv { python3 -m venv "$VENV_DIR/$1"; }
+function upvenv { source "$VENV_DIR/$1/bin/activate"; }
+function dnvenv { deactivate; }
+function rmvenv { rm -R "$VENV_DIR/$1"; }
+alias lsvenv="ls $VENV_DIR"
+export -f mkvenv
+export -f upvenv
+export -f dnvenv
+export -f rmvenv

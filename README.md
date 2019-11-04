@@ -1,6 +1,6 @@
 # How-To
 
-A list of links to tutorials, templates, FAQs, usage guides, tips and tricks, programming tools, and other helpful resources.
+A list of links to tutorials, templates, tools, and other helpful resources.
 
 Contents
 
@@ -102,50 +102,43 @@ Contents
 
 * Setup
     1. Install Python 3
-        * On a Unix-based OS, the system's default Python installation might be Python 2. Check this by running `python --version` on a terminal. If this is so, install Python 3 but **DO NOT REMOVE / OVERWRITE / UNINSTALL** the old Python 2. The system uses Python 2 for its internal scripts and removing it may break the OS installation.
+        * On a Unix-based OS, the system's default Python installation is normally Python2. Check this by running `python --version` on a terminal. If this is so, install Python3 but **DO NOT REMOVE / OVERWRITE / UNINSTALL** the old Python2. The system uses Python2 for its internal scripts and removing it may break the OS installation.
         * For Linux, either install it from `apt` or from source
-            * Example: [How to install Python3.7 on Ubuntu18.04?](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/)
-        * For Mac, use [Homebrew](https://docs.brew.sh/Homebrew-and-Python)
+            * [How to install Python3.7 on Ubuntu18.04?](https://linuxize.com/post/how-to-install-python-3-7-on-ubuntu-18-04/)
+        * For Mac, use Homebrew
+            * [Installing Python 3 on Mac OS X](https://docs.python-guide.org/starting/install3/osx/)
+            * [How is Python handled by Homebrew](https://docs.brew.sh/Homebrew-and-Python)
         * Verify the Python installation by running
-            ```bash
+            ```shell
             $ which python3
             $ python3 --version
 
             ```
-    1. Install [virtualenv](https://virtualenv.pypa.io/en/stable/)
-        * Do `pip3 install virtualenv`
-        * Using a **virtualenv** allows:
-            * Different projects to use different packages
-            * Different projects to use different versions of the same packages
-            * Separation between system-specific and project-specific packages
-            * Tracking of the dependencies of each project
-    1. Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.io/en/latest/#)
-        * Do `pip3 install virtualenvwrapper`
-        * Notable [virtualenvwrapper commands](http://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html):
-            * `mkvirtualenv`
-            * `lsvirtualenv`
-            * `lssitepackages`
-            * `workon`
-            * `deactivate`
-    1. Create the directory for storing Python virtual environments
-        ```bash
-        $ mkdir -p ~/.virtualenvs
+    1. Setup and use a [virtual environment](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
+        * There are [many different modules](https://stackoverflow.com/q/41573587/2745495) for creating a virtual environment
+        * Recommendations:
+            * If Python2 support is needed, use the [virtualenv](https://virtualenv.pypa.io/en/stable/) module
+            * If Python3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) module
+        * For `venv`
+            * Create the parent directory at `$HOME/.venvs`
+            * Copy the [bash aliases for using venv](./settings/bash/bash_aliases)
+                * `mkvenv PROJECT_NAME`
+                * `upvenv PROJECT_NAME`
+                * `dnvenv`
+                * `rmvenv PROJECT_NAME`
+                * `lsvent`
+    1. For each Python project
+        * Maintain a *requirements.txt* file
+            ```shell
+            $ pip freeze > requirements.txt
 
-        ```
-    1. Add the following to your environment's **.bash_profile** (or its equivalent):
-        ```bash
-        export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-        export WORKON_HOME=~/.virtualenvs
-        source /usr/local/bin/virtualenvwrapper.sh
+            ```
+        * Create the virtual environment
+        * Install the project dependencies from the *requirements.txt*:
+            ```shell
+            $ pip install -r requirements.txt
 
-        ```
-    1. Create an environment for each project, ex. `mkvirtualenv myapp`
-    1. Activate the project's virtual environment, ex. `workon myapp`
-    1. Install project dependencies from [requirements.txt](./requirements.txt):
-        ```bash
-        $ pip install -r requirements.txt
-
-        ```
+            ```
 * FAQ
     * [The FAQ list every Python developer MUST first read](https://docs.python.org/3/faq/programming.html)
     * [How does `import` work?](https://docs.python.org/3/tutorial/modules.html#the-module-search-path)
