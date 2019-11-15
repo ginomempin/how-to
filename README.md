@@ -68,8 +68,7 @@ Contents
         * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
-        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - see `git blame` info on the status bar
-        * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) - view `git log` and `git diff`'s
+        * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
     * Python
         * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
             * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
