@@ -64,9 +64,8 @@ Contents
         * [Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
         * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
         * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
-    * Project Management
+    * Debugging
         * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
-    * Shell Scripting
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
         * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
@@ -77,6 +76,7 @@ Contents
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
     * C/C++
         * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - linting, debugging, intellisense, formatting
+        * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) and [CMake Tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools)
     * HTML
         * [Auto Complete Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag)
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
