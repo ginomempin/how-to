@@ -76,7 +76,7 @@ Contents
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
     * C/C++
         * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - linting, debugging, intellisense, formatting
-        * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) and [CMake Tools](https://marketplace.visualstudio.com/items?itemName=vector-of-bool.cmake-tools)
+        * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) - syntax highlighting and intellisense
     * HTML
         * [Auto Complete Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-complete-tag)
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
