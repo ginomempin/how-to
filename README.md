@@ -69,6 +69,7 @@ Contents
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
         * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
+        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - click to show `git blame` info for specific lines
     * Python
         * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
             * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
