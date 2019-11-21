@@ -12,6 +12,7 @@ Contents
 * [HTML/CSS](#htmlcss)
 * [Bash](#bash)
 * [Heroku](#heroku)
+* [Nginx](#Nginx)
 
 ## Git
 
@@ -201,3 +202,9 @@ Contents
 * Troubleshooting
     * `git push heroku master` problems
         * [*Permission denied (publickey)*](https://stackoverflow.com/q/4269922/2745495)
+
+## Nginx
+
+* Configuration Templates
+    * For proxying to a NodeJS/Flask server: [sites-available/server.conf](./templates/nginx/sites-available/server.conf)
+    * For sharing common proxy setttings: [conf.d/server-proxy.conf](./templates/nginx/conf.d/server-proxy.conf)
