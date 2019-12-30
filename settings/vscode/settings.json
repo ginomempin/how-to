@@ -10,6 +10,7 @@
     //
     // This prevents unnecessary changes to version-controlled files
     // that show up in `git diff` or some other diff tool.
+    "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
 
@@ -23,34 +24,74 @@
     "editor.fontFamily": "Hack",
     "terminal.integrated.fontFamily": "Hack",
 
+    // Cursor
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSurroundingLines": 5,
+
     // Indentation
     //
-    // Always use spaces
-    // Tabs will insert 4 spaces
+    // Always use spaces.
+    // Tabs will insert 4 spaces.
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
 
     // Word Wrapping
     //
-    // Set max line length to 120
-    // Wrapped lines are visually indented
+    // Set max line length to 120.
+    // Wrapped lines are visually indented.
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "indent",
 
     // File Explorer
     //
-    // List files first before folders
+    // List files first before folders.
     // Show indent guides to visually see which files belong
-    // to which folder
+    // to which folder.
+    // Do not use Java IDE style of compacting empty folders
+    // or folders with only one child (ex. app/libs/utils).
+    "explorer.compactFolders": false,
     "explorer.sortOrder": "filesFirst",
     "workbench.tree.renderIndentGuides": "always",
 
+    // Colors
+    //
+    // Many colors of the VS Code UI can be customized.
+    // Here, change the colors for erros and warnings,
+    // and differentiate ignored, untracked, and modified
+    // git files.
+    "workbench.colorCustomizations": {
+        "list.errorForeground": "#f66",
+        "list.warningForeground": "#fff333",
+        "editorWarning.foreground": "#fff333",
+        "gitDecoration.ignoredResourceForeground": "#635e5e",
+        "gitDecoration.untrackedResourceForeground": "#0099ff",
+        "gitDecoration.modifiedResourceForeground": "#00ff2aaf",
+        "minimap.errorHighlight": "#ff0000",
+        "minimap.findMatchHighlight": "#00ff2aaf",
+        "minimap.selectionHighlight": "#c008fb",
+        "minimap.warningHighlight": "#f4fb08",
+        "editorBracketMatch.background": "#566573"
+    },
+
     // Version Control
     //
-    // Enable sigining git commits with GPG
+    // Enable sigining git commits with GPG.
+    // Disable built-in validation of commit messages.
+    // Disable force pushing.
     "git.enableCommitSigning": true,
+    "git.inputValidation": "off",
+    "git.inputValidationLength": 140,
+    "git.rebaseWhenSync": true,
+    "git.showPushSuccessNotification": true,
+    "git.useForcePushWithLease": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "scm.defaultViewMode": "tree",
+
+    // General Syntax
+    "editor.matchBrackets": "near",
 
     // Markdown Linting
     "markdownlint.run": "onSave",
@@ -61,8 +102,13 @@
         "MD026": false,
         "MD031": false,
         "MD032": false,
+        "MD033": false,
         "MD040": false
     },
+
+    // HTML
+    // Enable HTML mirror cursor (https://code.visualstudio.com/updates/v1_41#_html-mirror-cursor)
+    "html.mirrorCursorOnMatchingTag": true,
 
     // Python Intellisense
     //
@@ -93,21 +139,27 @@
         "--disable=len-as-condition",
         "--disable=missing-docstring",
         "--disable=redefined-outer-name",
-        "--disable=superfluous-parens",
+        "--disable=superfluous-parens"
     ],
 
-    // Colors
+    // Javascript Linting
     //
-    // Many colors of the VS Code UI can be customized.
-    // Here, change the colors for erros and warnings,
-    // and differentiate ignored, untracked, and modified
-    // git files.
-    "workbench.colorCustomizations": {
-        "list.errorForeground": "#f66",
-        "list.warningForeground": "#fff333",
-        "editorWarning.foreground": "#fff333",
-        "gitDecoration.ignoredResourceForeground": "#635e5e",
-        "gitDecoration.untrackedResourceForeground": "#0099ff",
-        "gitDecoration.modifiedResourceForeground": "#00ff2aaf"
-    }
+    // Prevent auto-fixing code. It's better that the linter
+    // shows the warnings/errors, then judge manually how to
+    // fix. This promotes proper coding habits.
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": false
+    },
+    "eslint.enable": true,
+    "eslint.format.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.probe": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact",
+        "html",
+        "vue"
+    ],
+    "eslint.run": "onSave"
 }
