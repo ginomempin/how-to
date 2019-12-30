@@ -56,6 +56,7 @@ Contents
             * Provides consistent monospaced font for Windows, Mac, or Ubuntu
             * Distinguishes between zeroes from letter O's
             * Distinguishes between letter I's and letter L's
+        * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
     * Themes
         * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
         * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
@@ -65,12 +66,11 @@ Contents
         * [Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
         * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
         * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
-    * Debugging
-        * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
-        * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Git
         * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
         * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - click to show `git blame` info for specific lines
+    * Bash Scripting
+        * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Python
         * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
             * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
