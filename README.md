@@ -80,6 +80,7 @@ Contents
         * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - linting, debugging, intellisense, formatting
         * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) - syntax highlighting and intellisense
     * HTML
+        * [Auto-Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag)
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
     * Javascript
         * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
