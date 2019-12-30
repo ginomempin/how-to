@@ -84,7 +84,7 @@ Contents
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
     * Javascript
         * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-        * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+        * [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
         * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
     * Docker
         * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
