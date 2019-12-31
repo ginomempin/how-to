@@ -69,6 +69,7 @@ Contents
     * Git
         * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
         * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - click to show `git blame` info for specific lines
+        * [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) - Add .gitignore from [github/gitignore](https://github.com/github/gitignore) repo
     * Bash Scripting
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
     * Python
