@@ -26,23 +26,23 @@ Contents
 * Configuration
     * [.gitignore templates](https://github.com/github/gitignore)
     * .gitconfig
-        * [For Linux or Mac](./settings/git/unix/config)
-        * [For Windows](./settings/git/windows/config)
+        * [For Linux or Mac](./templates/git/unix/config)
+        * [For Windows](./templates/git/windows/config)
     * gpg-agent.conf
-        * [For Linux or Mac](./settings/git/unix/gpg-agent.conf)
+        * [For Linux or Mac](./templates/git/unix/gpg-agent.conf)
     * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
         * How to ensure that Git does not screw up your code when working on both Unix, Linux, or Mac (which use `LF`) and Windows (which uses `CRLF`)
 
 ## Visual Studio Code
 
-* [General Settings](./settings/vscode/settings.json)
+* [General Settings](./templates/vscode/settings.json)
     * Font
     * Indentation and Whitespace Control
     * Word Wrapping
     * Intellisense
     * Linting
     * Color Customization
-* Keybindings ([Mac](./settings/vscode/keybindings.mac.json), [Linux](./settings/vscode/keybindings.linux.json))
+* Keybindings ([Mac](./templates/vscode/keybindings.mac.json), [Linux](./templates/vscode/keybindings.linux.json))
     * Set back-forward navigation (helpful when using go-to-definitions)
     * Set keys for switching between the terminal and the editor
     * Set keys for switching tabs
@@ -124,12 +124,12 @@ Contents
             * If Python3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) module
         * For `venv`
             * Create the parent directory at `$HOME/.venvs`
-            * Copy the [bash aliases for using venv](./settings/bash/bash_aliases)
+            * Copy the [bash aliases for using venv](./templates/bash/bash_aliases)
                 * `mkvenv PROJECT_NAME`
                 * `upvenv PROJECT_NAME`
                 * `dnvenv`
                 * `rmvenv PROJECT_NAME`
-                * `lsvent`
+                * `lsvenv`
     1. For each Python project
         * Maintain a *requirements.txt* file
             ```shell
@@ -180,11 +180,11 @@ Contents
 
 ## Bash
 
-* [Terminal Aliases](./settings/bash/bash_aliases)
-* [Terminal Output Formatting](./settings/bash/bash_output)
+* [Terminal Aliases](./templates/bash/bash_aliases)
+* [Terminal Output Formatting](./templates/bash/bash_output)
 * Script Templates
-    * [utils.sh](./templates/utils.sh): for holding common functions
-    * [template.sh](./templates/template.sh): base format for all other scripts
+    * [utils.sh](./templates/bash/utils.sh): for holding common functions
+    * [template.sh](./templates/bash/template.sh): base format for all other scripts
 
 ## Heroku
 
