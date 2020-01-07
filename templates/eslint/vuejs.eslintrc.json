@@ -1,0 +1,87 @@
+{
+    "env": {
+        "node": true,
+        "browser": true,
+        "commonjs": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "array-bracket-newline": [
+            "error",
+            {
+                "multiline": true
+            }
+        ],
+        "brace-style": [
+            "error",
+            "1tbs"
+        ],
+        "default-case": [
+            "error"
+        ],
+        "function-paren-newline": [
+            "error",
+            "multiline"
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1,
+                "FunctionDeclaration": { "parameters": "first" },
+                "CallExpression": { "arguments": "first" },
+                "ArrayExpression": "first",
+                "ObjectExpression": "first",
+                "ignoreComments": true
+            }
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "no-console": "off",
+        "no-trailing-spaces": [
+            "error",
+            {
+                "skipBlankLines" : false
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "minProperties": 2,
+                "consistent": true
+            }
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "vue/attribute-hyphenation": "off",
+        "vue/html-indent": [
+            "error",
+            4
+        ],
+        "vue/html-closing-bracket-newline": [
+            "error",
+            {
+                "singleline": "never",
+                "multiline": "never"
+            }
+        ],
+        "vue/singleline-html-element-content-newline": "off"
+    }
+}
