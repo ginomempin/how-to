@@ -25,7 +25,7 @@
     sl = status --long --ignored
     h = log --graph --date-order --date=short --pretty=format:'%C(auto)%h%d %C(reset)%s %C(bold blue)%cn %C(reset)%C(green)%cr (%cd)'
     l = log --show-signature
-    f = fetch -v origin
+    f = fetch -v origin --prune --prune-tags
     pl = pull -v
     ps = push
     tl = tag -l --sort=-creatordate --format='%(creatordate:short) | %(refname)'
