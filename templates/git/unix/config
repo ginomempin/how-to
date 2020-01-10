@@ -28,6 +28,7 @@
     f = fetch -v origin
     pl = pull -v
     ps = push
+    tl = tag -l --sort=-creatordate --format='%(creatordate:short) | %(refname)'
     whenadded = log --diff-filter=A
     checkmerge = diff HEAD HEAD^1
     hide = update-index --assume-unchanged
