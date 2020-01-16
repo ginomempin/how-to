@@ -24,5 +24,13 @@
         "key": "ctrl+shift+pageup",
         "command": "workbench.action.focusActiveEditorGroup",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+down ctrl+shift+down",
+        "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+shift+up ctrl+shift+up",
+        "command": "workbench.action.terminal.focusPrevious"
     }
 ]
