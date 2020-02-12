@@ -11,6 +11,7 @@ Contents
 * [iOS](#ios)
 * [HTML/CSS](#htmlcss)
 * [Bash](#bash)
+* [Regex](#regex)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
 
@@ -186,6 +187,11 @@ Contents
 * Script Templates
     * [utils.sh](./templates/bash/utils.sh): for holding common functions
     * [template.sh](./templates/bash/template.sh): base format for all other scripts
+
+## Regex
+
+* [RegExr](https://regexr.com/) - scratch pad for trying out RegEx expressions + cheatsheet
+* [iHateRegex.io](https://ihateregex.io/) - a **more** visual scratch pad + common RegEx patterns
 
 ## Heroku
 
