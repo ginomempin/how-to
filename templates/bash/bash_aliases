@@ -1,7 +1,7 @@
 
 # NAVIGATION
 # ---------------------------------------------------------
-alias ls="ls -lh --group-directories-first --color=auto"
+alias ls="ls -lhp"
 alias up1="cd ../"
 alias up2="cd ../../"
 alias up3="cd ../../../"
@@ -75,8 +75,8 @@ function mkvenv {
     # system has multiple versions installed
     # Ex. python3.5, python3.7, python3.8
     PY=$2
-  fi    
-  $PY -m venv "$VENV_DIR/$1"; 
+  fi
+  $PY -m venv "$VENV_DIR/$1";
 }
 function upvenv { source "$VENV_DIR/$1/bin/activate"; }
 function dnvenv { deactivate; }
