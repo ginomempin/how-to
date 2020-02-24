@@ -13,6 +13,8 @@
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "boundary",
 
     // Font
     //
@@ -23,6 +25,32 @@
     // https://source-foundry.github.io/Hack/font-specimen.html
     "editor.fontFamily": "Hack",
     "terminal.integrated.fontFamily": "Hack",
+
+    // Themes
+    "workbench.colorTheme": "Dracula Soft",
+    "workbench.iconTheme": "material-icon-theme",
+
+    // Colors
+    //
+    // Many colors of the VS Code UI can be customized.
+    // Here, change the colors for erros and warnings,
+    // and differentiate ignored, untracked, and modified
+    // git files.
+    "workbench.colorCustomizations": {
+        "list.errorForeground": "#f66",
+        "list.warningForeground": "#fff333",
+        "editor.foldBackground": "#2c3e50",
+        "editorBracketMatch.background": "#566573",
+        "editorError.foreground": "#00000000",
+        "editorWarning.foreground": "#fff333",
+        "gitDecoration.ignoredResourceForeground": "#635e5e",
+        "gitDecoration.untrackedResourceForeground": "#0099ff",
+        "gitDecoration.modifiedResourceForeground": "#00ff2aaf",
+        "minimap.errorHighlight": "#ff0000",
+        "minimap.findMatchHighlight": "#00ff2aaf",
+        "minimap.selectionHighlight": "#c008fb",
+        "minimap.warningHighlight": "#f4fb08"
+    },
 
     // Cursor
     "editor.cursorStyle": "line",
@@ -36,6 +64,11 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+
+    // Minimap
+    "editor.minimap.enabled": true,
+    "editor.minimap.maxColumn": 120,
+    "editor.minimap.scale": 2,
 
     // Word Wrapping
     //
@@ -54,33 +87,48 @@
     // or folders with only one child (ex. app/libs/utils).
     "explorer.compactFolders": false,
     "explorer.sortOrder": "filesFirst",
+    "workbench.list.horizontalScrolling": true,
     "workbench.tree.renderIndentGuides": "always",
 
-    // Colors
+    // Editor Tabs
     //
-    // Many colors of the VS Code UI can be customized.
-    // Here, change the colors for erros and warnings,
-    // and differentiate ignored, untracked, and modified
-    // git files.
-    "workbench.colorCustomizations": {
-        "list.errorForeground": "#f66",
-        "list.warningForeground": "#fff333",
-        "editorWarning.foreground": "#fff333",
-        "gitDecoration.ignoredResourceForeground": "#635e5e",
-        "gitDecoration.untrackedResourceForeground": "#0099ff",
-        "gitDecoration.modifiedResourceForeground": "#00ff2aaf",
-        "minimap.errorHighlight": "#ff0000",
-        "minimap.findMatchHighlight": "#00ff2aaf",
-        "minimap.selectionHighlight": "#c008fb",
-        "minimap.warningHighlight": "#f4fb08",
-        "editorBracketMatch.background": "#566573"
-    },
+    // Do not close files which have been deleted outside of
+    // VS Code (serves like a backup for accidental deletion).
+    // Do show tabs which have been modified.
+    // Do not put a limit on open tabs.
+    // Do open the tab on the last scroll position.
+    "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.limit.enabled": false,
+    "workbench.editor.openPositioning": "last",
+    "workbench.editor.restoreViewState": false,
+
+    // Problems
+    //
+    // Show problem of current line in status bar
+    "problems.showCurrentInStatus": true,
+
+    // Terminal
+    //
+    // Always open terminal in current workspace folder
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.cwd": "${workspaceFolder}",
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontWeight": "100",
+    "terminal.integrated.fontWeightBold": "normal",
 
     // Version Control
     //
     // Enable sigining git commits with GPG.
     // Disable built-in validation of commit messages.
     // Disable force pushing.
+    // Disable version control of submodules.
+    "git.alwaysShowStagedChangesResourceGroup": true,
+    "git.detectSubmodules": false,
     "git.enableCommitSigning": true,
     "git.inputValidation": "off",
     "git.inputValidationLength": 140,
@@ -88,6 +136,7 @@
     "git.showPushSuccessNotification": true,
     "git.useForcePushWithLease": false,
     "diffEditor.ignoreTrimWhitespace": false,
+    "files.saveConflictResolution": "askUser",
     "scm.defaultViewMode": "tree",
 
     // General Syntax
@@ -107,6 +156,7 @@
     },
 
     // HTML
+    //
     // Enable HTML mirror cursor (https://code.visualstudio.com/updates/v1_41#_html-mirror-cursor)
     "html.mirrorCursorOnMatchingTag": true,
 
@@ -141,6 +191,12 @@
         "--disable=redefined-outer-name",
         "--disable=superfluous-parens"
     ],
+
+    // Python AutoDocstring
+    "autoDocstring.docstringFormat": "sphinx",
+    "autoDocstring.generateDocstringOnEnter": true,
+    "autoDocstring.guessTypes": true,
+    "autoDocstring.startOnNewLine": true,
 
     // Javascript Linting
     //
