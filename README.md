@@ -185,6 +185,8 @@ Contents
 
 ## Bash
 
+* Guides
+    * [When laziness is efficient: Make the most of your command line](https://stackoverflow.blog/2020/02/12/when-laziness-is-efficient-make-the-most-of-your-command-line/)
 * [Terminal Aliases](./templates/bash/bash_aliases)
 * [Terminal Output Formatting](./templates/bash/bash_output)
 * Script Templates
