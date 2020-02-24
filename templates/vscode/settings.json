@@ -41,7 +41,6 @@
         "list.warningForeground": "#fff333",
         "editor.foldBackground": "#2c3e50",
         "editorBracketMatch.background": "#566573",
-        "editorError.foreground": "#00000000",
         "editorWarning.foreground": "#fff333",
         "gitDecoration.ignoredResourceForeground": "#635e5e",
         "gitDecoration.untrackedResourceForeground": "#0099ff",
