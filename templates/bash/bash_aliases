@@ -1,7 +1,8 @@
 
-# NAVIGATION
+# COMMON COMMANDS
 # ---------------------------------------------------------
-alias ls="ls -lhp"
+alias ll="ls -Flhp"
+alias lla="ll -a"
 alias up1="cd ../"
 alias up2="cd ../../"
 alias up3="cd ../../../"
@@ -81,7 +82,7 @@ function mkvenv {
 function upvenv { source "$VENV_DIR/$1/bin/activate"; }
 function dnvenv { deactivate; }
 function rmvenv { rm -R "$VENV_DIR/$1"; }
-alias lsvenv="ls $VENV_DIR"
+alias lsvenv="ll $VENV_DIR"
 export -f mkvenv
 export -f upvenv
 export -f dnvenv
