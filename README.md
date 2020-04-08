@@ -69,8 +69,9 @@ Contents
         * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
         * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - click to show `git blame` info for specific lines
         * [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) - Add .gitignore from [github/gitignore](https://github.com/github/gitignore) repo
-    * Bash Scripting
+    * Bash
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
+        * [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) - linter and static analysis tool
     * Python
         * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
             * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
@@ -187,6 +188,8 @@ Contents
 * Script Templates
     * [utils.sh](./templates/bash/utils.sh): for holding common functions
     * [template.sh](./templates/bash/template.sh): base format for all other scripts
+* Static Analysis Tools
+    * [shellcheck](https://www.shellcheck.net/)
 
 ## Regex
 
