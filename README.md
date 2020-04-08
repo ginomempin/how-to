@@ -22,6 +22,7 @@ Contents
     * [The simplest guide to getting started with git](http://rogerdudler.github.io/git-guide/)
     * [Git Gud](https://nic-hartley.github.io/git-gud/)
         * "*Git Gud is a web-based Git simulator. It shows you the git tree visually, and you can run commands to show you what they do to the tree*." ([source](https://dev.to/nichartley/git-gud-at-git-5d9k))
+    * [Git Commands Visualized](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1)
     * [Oh shit, git!](https://ohshitgit.com/)
         * What to do when you did something wrong
 * Conventions
