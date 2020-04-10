@@ -9,15 +9,45 @@ alias up3="cd ../../../"
 alias up4="cd ../../../../"
 alias up5="cd ../../../../../"
 
-# CONVENIENCE COMMANDS
+# FIND THINGS
 # ---------------------------------------------------------
 # Find all symbolic links in the current directory.
 alias find-links="find . -type l | xargs ls -l --color=auto"
 
+# Find all broken symbolic links from a specific directory
+function find-broken-symlinks() {
+  if [[ -z "$1" ]];
+  then
+    echo "ERROR: Please specify the search path."
+    echo "Ex. find-broken-symlinks /home/projects"
+  else
+    for broken in $(find "$1" -type l ! -exec test -e {} \; -print);
+    do
+        ls -l ${broken}
+    done
+  fi
+}
+export -f find-broken-symlinks
+
+# COMPRESSED THINGS
+# ---------------------------------------------------------
 # If the zip has files with Japanese filenames, using the
 # regular unzip will garble the Japanese characters. Use
 # this to preserve filenames.
 alias unzip-ja="unzip -O cp932 $1"
+
+# DISK USAGE
+# ---------------------------------------------------------
+# Print a sorted list of disk usages from a specific directory.
+function print-du-sorted() {
+  if [[ -z "$1" ]]; then
+    echo "ERROR. Please specify the directory to check."
+    echo "Ex. print-du-sorted /media/commonpf"
+  else
+    du $1 -h | sort -h
+  fi
+}
+export -f print-du-sorted
 
 # TERMINAL CONFIGURATION
 # ---------------------------------------------------------
