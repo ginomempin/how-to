@@ -57,6 +57,7 @@ Contents
         * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
         * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - remember and auto-create multiple terminal panes
         * [Path Intellisence](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - autocompletion for filenames/paths
+        * [vsc-rename-files](https://marketplace.visualstudio.com/items?itemName=alfnielsen.vsc-rename-files) - rename multiple files
     * Themes
         * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
         * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
