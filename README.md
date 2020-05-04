@@ -46,14 +46,14 @@ Contents
     * Set keys for switching tabs
 * Extensions
     * General
-        * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
-        * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
-        * [Section Divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) - divide code into sections with comment headers
-        * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - auto-populate new files with template code
         * Use [Hack](https://github.com/source-foundry/Hack) for the font
             * Provides consistent monospaced font for Windows, Mac, or Ubuntu
             * Distinguishes between zeroes from letter O's
             * Distinguishes between letter I's and letter L's
+        * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
+        * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
+        * [Comment Divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) - divide code into sections with comment headers
+        * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - auto-populate new files with template code
         * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
         * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - remember and auto-create multiple terminal panes
         * [Path Intellisence](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - autocompletion for filenames/paths
@@ -64,7 +64,7 @@ Contents
     * Documentation
         * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - linting Markdown files
         * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - convert Markdown files to PDF
-        * [Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
+        * [Markdown Preview for Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
         * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
         * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
     * Git
