@@ -1,7 +1,7 @@
 
 # COMMON COMMANDS
 # ---------------------------------------------------------
-alias ll="ls -Flhp"
+alias ll="ls -FlhpG"
 alias lla="ll -a"
 alias up1="cd ../"
 alias up2="cd ../../"
