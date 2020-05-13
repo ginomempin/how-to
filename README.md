@@ -75,13 +75,14 @@ Contents
         * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
         * [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) - linter and static analysis tool
     * Python
-        * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, formatting
+        * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, syntax highlighting
             * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
             * [How to specify path to virtual environments?](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
         * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
     * C/C++
-        * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - linting, debugging, intellisense, formatting
+        * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - debugging, intellisense, syntax highlighting
         * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) - syntax highlighting and intellisense
+        * [cpplint](https://marketplace.visualstudio.com/items?itemName=mine.cpplint) - linting
     * HTML
         * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) + [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
         * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
