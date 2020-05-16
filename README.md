@@ -2,7 +2,7 @@
 
 A collection of links to tutorials, templates, tools, and other helpful resources.
 
-* [Git](./git/about.md)
+* [Git](./git/README.md)
 * [Visual Studio Code](#visual-studio-code)
 * [Docker](#docker)
 * [Python](#python)
