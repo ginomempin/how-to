@@ -9,14 +9,9 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [Python](./python/README.md)
 * [HTML/CSS](./html/README.md)
 * [iOS](./ios/README.md)
-* [Regex](#regex)
+* [RegEx](./regex/README.md)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
-
-## Regex
-
-* [RegExr](https://regexr.com/) - scratch pad for trying out RegEx expressions + cheatsheet
-* [iHateRegex.io](https://ihateregex.io/) - a **more** visual scratch pad + common RegEx patterns
 
 ## Heroku
 
