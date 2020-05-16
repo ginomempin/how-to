@@ -32,7 +32,7 @@
 ### Identity
 
 * gpg-agent.conf
-    * [For Linux or Mac](./templates/git/unix/gpg-agent.conf)
+    * [For Linux or Mac](./unix/gpg-agent.conf)
 
 ### Line Endings
 
