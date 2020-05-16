@@ -1,10 +1,8 @@
 # How-To
 
-A list of links to tutorials, templates, tools, and other helpful resources.
+A collection of links to tutorials, templates, tools, and other helpful resources.
 
-Contents
-
-* [Git](#git)
+* [Git](./git/about.md)
 * [Visual Studio Code](#visual-studio-code)
 * [Docker](#docker)
 * [Python](#python)
@@ -14,28 +12,6 @@ Contents
 * [Regex](#regex)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
-
-## Git
-
-* [The official documentation](https://git-scm.com/docs)
-* Getting Started
-    * [The simplest guide to getting started with git](http://rogerdudler.github.io/git-guide/)
-    * [Git Gud](https://nic-hartley.github.io/git-gud/)
-        * "*Git Gud is a web-based Git simulator. It shows you the git tree visually, and you can run commands to show you what they do to the tree*." ([source](https://dev.to/nichartley/git-gud-at-git-5d9k))
-    * [Git Commands Visualized](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1)
-    * [Oh shit, git!](https://ohshitgit.com/)
-        * What to do when you did something wrong
-* Conventions
-    * [A guide on commit messages](https://dev.to/yvonnickfrin/a-guide-on-commit-messages-d8n)
-* Configuration
-    * [.gitignore templates](https://github.com/github/gitignore)
-    * .gitconfig
-        * [For Linux or Mac](./templates/git/unix/config)
-        * [For Windows](./templates/git/windows/config)
-    * gpg-agent.conf
-        * [For Linux or Mac](./templates/git/unix/gpg-agent.conf)
-    * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
-        * How to ensure that Git does not screw up your code when working on both Unix, Linux, or Mac (which use `LF`) and Windows (which uses `CRLF`)
 
 ## Visual Studio Code
 
