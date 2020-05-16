@@ -42,7 +42,7 @@ Release versions follow [semantic versioning](https://semver.org/),
 
 <div style="page-break-after: always;"></div>
 
-## v1.0.0
+## 1.0.0
 
 ### Feature Group A
 
