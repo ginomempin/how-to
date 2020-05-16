@@ -11,10 +11,4 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [iOS](./ios/README.md)
 * [RegEx](./regex/README.md)
 * [Heroku](./heroku/README.md)
-* [Nginx](#Nginx)
-
-## Nginx
-
-* Configuration Templates
-    * For proxying to a NodeJS/Flask server: [sites-available/server.conf](./templates/nginx/sites-available/server.conf)
-    * For sharing common proxy setttings: [conf.d/server-proxy.conf](./templates/nginx/conf.d/server-proxy.conf)
+* [Nginx](./nginx/README.md)
