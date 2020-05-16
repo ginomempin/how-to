@@ -3,7 +3,7 @@
 A collection of links to tutorials, templates, tools, and other helpful resources.
 
 * [Git](./git/README.md)
-* [Visual Studio Code](#visual-studio-code)
+* [Visual Studio Code](./vscode/README.md)
 * [Docker](#docker)
 * [Python](#python)
 * [iOS](#ios)
@@ -12,63 +12,6 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [Regex](#regex)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
-
-## Visual Studio Code
-
-* [General Settings](./templates/vscode/settings.json)
-* Keybindings ([Mac](./templates/vscode/keybindings.mac.json), [Linux](./templates/vscode/keybindings.linux.json))
-    * Set back-forward navigation (helpful when using go-to-definitions)
-    * Set keys for switching between the terminal and the editor
-    * Set keys for switching tabs
-* Extensions
-    * General
-        * Use [Hack](https://github.com/source-foundry/Hack) for the font
-            * Provides consistent monospaced font for Windows, Mac, or Ubuntu
-            * Distinguishes between zeroes from letter O's
-            * Distinguishes between letter I's and letter L's
-        * [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) - synchronize VSCode settings across multiple dev env's
-        * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - use colors to mark indentation levels
-        * [Comment Divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) - divide code into sections with comment headers
-        * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - auto-populate new files with template code
-        * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - edit and run codes on remote machines or docker containers
-        * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - remember and auto-create multiple terminal panes
-        * [Path Intellisence](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - autocompletion for filenames/paths
-        * [vsc-rename-files](https://marketplace.visualstudio.com/items?itemName=alfnielsen.vsc-rename-files) - rename multiple files
-    * Themes
-        * [Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) - dark theme
-        * [Material Icons](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) - show type-appropriate icons for files/folders in Explorer
-    * Documentation
-        * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - linting Markdown files
-        * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - convert Markdown files to PDF
-        * [Markdown Preview for Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid) - preview Mermaid diagrams
-        * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - preview PlantUML diagrams
-        * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - finds and lists all the `TODO` comments from your codes
-    * Git
-        * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - view history and diffs from a tree-like UI
-        * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - click to show `git blame` info for specific lines
-        * [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) - Add .gitignore from [github/gitignore](https://github.com/github/gitignore) repo
-    * Bash
-        * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - launch configuration for bash scripts
-        * [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) - linter and static analysis tool
-    * Python
-        * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - linting, debugging, intellisense, syntax highlighting
-            * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
-            * [How to specify path to virtual environments?](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
-        * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
-    * C/C++
-        * [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - debugging, intellisense, syntax highlighting
-        * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) - syntax highlighting and intellisense
-        * [cpplint](https://marketplace.visualstudio.com/items?itemName=mine.cpplint) - linting
-    * HTML
-        * [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) + [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-        * [Highlight Matching Tag](https://marketplace.visualstudio.com/items?itemName=vincaslt.highlight-matching-tag)
-        * [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight) - show CSS/web hex value in their actual color
-    * Javascript
-        * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-        * [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-        * [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
-    * Docker
-        * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
 
 ## Docker
 
