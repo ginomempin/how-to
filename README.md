@@ -7,8 +7,8 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [Docker](./docker/README.md)
 * [Bash](./bash/README.md)
 * [Python](./python/README.md)
+* [HTML/CSS](./html/README.md)
 * [iOS](#ios)
-* [HTML/CSS](#htmlcss)
 * [Regex](#regex)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
@@ -20,8 +20,6 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 
 ## HTML/CSS
 
-* [Font Awesome](https://fontawesome.com/?from=io)
-* [Google Fonts](https://fonts.google.com/)
 
 ## Regex
 
