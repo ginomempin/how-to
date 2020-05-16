@@ -8,18 +8,10 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [Bash](./bash/README.md)
 * [Python](./python/README.md)
 * [HTML/CSS](./html/README.md)
-* [iOS](#ios)
+* [iOS](./ios/README.md)
 * [Regex](#regex)
 * [Heroku](#heroku)
 * [Nginx](#Nginx)
-
-## iOS
-
-* [App Store Review Guidelines History](http://www.appstorereviewguidelineshistory.com/)
-    * Highlights (literally) the changes when Apple updates their [App Store Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)
-
-## HTML/CSS
-
 
 ## Regex
 
