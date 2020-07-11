@@ -1,5 +1,5 @@
 
-# COMMON COMMANDS
+# SHORTCUTS FOR BASIC COMMANDS
 # ---------------------------------------------------------
 alias ll="ls -FlhpG"
 alias lla="ll -a"
@@ -8,6 +8,8 @@ alias up2="cd ../../"
 alias up3="cd ../../../"
 alias up4="cd ../../../../"
 alias up5="cd ../../../../../"
+function mkcd { mkdir "$1" && cd "$1"; }
+export -f mkcd
 
 # FIND THINGS
 # ---------------------------------------------------------
@@ -15,7 +17,8 @@ alias up5="cd ../../../../../"
 alias find-links="find . -type l | xargs ls -l --color=auto"
 
 # Find all broken symbolic links from a specific directory
-function find-broken-symlinks() {
+function find-broken-symlinks()
+{
   if [[ -z "$1" ]];
   then
     echo "ERROR: Please specify the search path."
@@ -39,7 +42,8 @@ alias unzip-ja="unzip -O cp932 $1"
 # DISK USAGE
 # ---------------------------------------------------------
 # Print a sorted list of disk usages from a specific directory.
-function print-du-sorted() {
+function print-du-sorted()
+{
   if [[ -z "$1" ]]; then
     echo "ERROR. Please specify the directory to check."
     echo "Ex. print-du-sorted /media/commonpf"
@@ -52,7 +56,8 @@ export -f print-du-sorted
 # TERMINAL CONFIGURATION
 # ---------------------------------------------------------
 # Set the tab title (for Ubuntu Terminal)
-function set-tab-title() {
+function set-tab-title()
+{
   if [[ -z "$ORIG" ]]; then
     ORIG=${PS1}
   fi
@@ -66,11 +71,13 @@ export -f set-tab-title
 # When using a local registry, there might not be a clear
 # way of knowing what images are already stored there. This
 # aliases can be used to query available images and tags.
-function docker-query-images {
+function docker-query-images
+{
   echo "Querying list of images from $1"
   curl --insecure $1/v2/_catalog
 }
-function docker-query-image-tags {
+function docker-query-image-tags
+{
   echo "Querying list of tags from $1/$2"
   curl --insecure $1/v2/$2/tags/list
 }
@@ -82,11 +89,13 @@ export -f docker-query-image-tags
 # Convenience functions for setting/resetting PYTHONPATH.
 # Useful when integrating with other aliases.
 #   Ex. alias prepare-env="pythonpath-append lib; do-other-stuff"
-function pythonpath-reset {
+function pythonpath-reset
+{
   export PYTHONPATH=
   echo $PYTHONPATH
 }
-function pythonpath-append {
+function pythonpath-append
+{
   export PYTHONPATH=$PYTHONPATH:$1
   echo $PYTHONPATH
 }
@@ -96,7 +105,8 @@ export -f pythonpath-append
 # PYTHON VENV
 # ---------------------------------------------------------
 export VENV_DIR=$HOME/.venvs
-function mkvenv {
+function mkvenv
+{
   if [ -z $2 ];
   then
     # Use whatever is defined/aliased as `python3`
