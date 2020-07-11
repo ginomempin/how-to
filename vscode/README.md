@@ -68,6 +68,7 @@
 
 #### Bash
 
+* [Bash IDE](https://marketplace.visualstudio.com/items?itemName=mads-hartmann.bash-ide-vscode) - Adds code completion, outline, and jump to declaration for Bash script
 * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - Adds launch configurations for bash scripts
 * [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) - Linter and static analysis tool
 
