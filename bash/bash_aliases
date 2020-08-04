@@ -8,6 +8,7 @@ alias up2="cd ../../"
 alias up3="cd ../../../"
 alias up4="cd ../../../../"
 alias up5="cd ../../../../../"
+alias rsync="rsync -a -h --stats --info=COPY,DEL,NAME1,PROGRESS2,REMOVE,SYMSAFE"
 function mkcd { mkdir "$1" && cd "$1"; }
 export -f mkcd
 
