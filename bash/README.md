@@ -7,11 +7,10 @@
 ## Configuration
 
 * [Aliases](./bash_aliases)
-* [Output Formatting](./bash_output)
+* [Prompt Formatting](./bash_output)
 
 ## Script Templates
 
-* [utils.sh](./utils.sh) - For holding common functions
 * [template.sh](./template.sh) - Base format for all other scripts
 
 ## Static Analysis Tools

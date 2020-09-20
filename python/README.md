@@ -17,30 +17,54 @@
         ```
 1. Setup and use a [virtual environment](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
     * There are [many different modules](https://stackoverflow.com/q/41573587/2745495) for creating a virtual environment
-    * Recommendations:
-        * If Python 2 support is needed, use the [virtualenv](https://virtualenv.pypa.io/en/stable/) module
-        * If Python 3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) module
-    * For `venv`
-        * Create the parent directory at `$HOME/.venvs`
-        * Copy the [bash aliases for using venv](../bash/bash_aliases)
-            * `mkvenv PROJECT_NAME`
-            * `upvenv PROJECT_NAME`
-            * `dnvenv`
-            * `rmvenv PROJECT_NAME`
-            * `lsvenv`
+    * If Python 2 support is needed, use the [virtualenv](https://virtualenv.pypa.io/en/stable/) module
+    * If Python 3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) or [pipenv](https://pypi.org/project/pipenv/)
+        * For `venv`
+            * Set `VENV_DIR` to directory for virtual environments (ex. `$HOME/.venvs`)
+            * Copy the [bash aliases for using venv](../bash/bash_aliases)
+                * `mkvenv PROJECT_NAME`
+                * `upvenv PROJECT_NAME`
+                * `dnvenv`
+                * `rmvenv PROJECT_NAME`
+                * `lsvenv`
+        * For `pipenv`
+            * Set `WORKON_HOME` to directory for virtual environments (ex. `$HOME/.venvs`)
+            * [How to set `pipenv shell` prompt to match the Terminal's PS1 prompt?](https://stackoverflow.com/q/54922550/2745495)
 1. For each Python project
-    * Maintain a *requirements.txt* file
-        ```shell
-        $ pip freeze > requirements.txt
+    * For `virtualenv` and `venv`
+        * Create/Activate a virtual environment
+            ```shell
+            $ mkvenv NAME /path/to/python
 
-        ```
-    * Create a virtual environment
-    * Install the project dependencies from the *requirements.txt*:
-        ```shell
-        $ pip install -r requirements.txt
+        * Create a *requirements.txt* file
+            ```shell
+            $ pip freeze > requirements.txt
 
-        ```
-    * When working on a project, *always* activate the virtual environment
+            ```
+        * Commit the *requirements.txt* file
+        * When switching environments:
+            ```shell
+            $ pip install -r requirements.txt
+
+            ```
+    * For `pipenv`
+        * Create/Activate a virtual environment
+            ```shell
+            $ pipenv --python=/path/to/python
+
+            ```
+        * Create a `Pipfile`
+            ```shell
+            $ pipenv install PACKAGE
+            $ pipenv install --dev PACKAGE
+
+            ```
+        * Commit the generated `Pipfile` and `Pipfile.lock`
+        * When switching environments:
+            ```shell
+            $ pipenv sync
+
+            ```
 
 ## FAQ
 
@@ -67,7 +91,13 @@
 ### Linters
 
 * [pydocstyle](https://pypi.org/project/pydocstyle/)
-* [pylint](https://www.pylint.org/)
+* [mypy](http://mypy-lang.org/)
+* [flake8](https://flake8.pycqa.org/en/latest/)
+
+### Formatters
+
+* [black](https://github.com/psf/black)
+* [yapf](https://github.com/google/yapf)
 
 ### Terminal
 

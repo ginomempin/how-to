@@ -106,6 +106,7 @@ export -f pythonpath-append
 # PYTHON VENV
 # ---------------------------------------------------------
 export VENV_DIR=$HOME/.venvs
+export WORKON_HOME=$VENV_DIR
 function mkvenv
 {
   if [ -z $2 ];
