@@ -44,9 +44,12 @@
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - Lint Markdown files
 * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - Export Markdown files to PDF or HTML
-* [Markdown Preview for Mermaid](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 * [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - Preview  and export PlantUML diagrams
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - Finds and lists all the `TODO` comments from your codes
+
+### Configurations
+
+* [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) - Adds validation, completion, and formatting of YAML files
 
 ### Source Control
 
@@ -56,13 +59,13 @@
 * [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - Click to show `git blame` info for specific lines
 * [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) - Add .gitignore from [github/gitignore](https://github.com/github/gitignore) repo
 
-### SVN
-
-* [SVN](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm) - Adds SVN support to VS Code's Source Control panel
-
 ### Docker
 
 * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) - Manage Docker images/containers right from VS Code
+
+### Kubernetes
+
+* [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) - Manage K8 clusters and adds intellisense for resources
 
 ### Language/Technology-Specific
 
@@ -75,14 +78,15 @@
 #### Python
 
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - Adds support for linting, debugging, intellisense, syntax highlighting
-    * [How to enable linting of Python files?](https://code.visualstudio.com/docs/python/linting)
+    * [How to configure linting and formatting of Python files?](https://code.visualstudio.com/docs/python/linting)
     * [How to specify path to virtual environments?](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
+* [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Auto-fill the docstring
 * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Adds docstring templates
 
 #### C++
 
 * [C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools) - Adds support for debugging, intellisense, syntax highlighting
-* [cpplint](https://marketplace.visualstudio.com/items?itemName=mine.cpplint) - Adds support for linting
+* [cpplint](https://marketplace.visualstudio.com/items?itemName=mine.cpplint) - Adds support for linting C++ files
 * [CMake](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) - Adds support for syntax highlighting and intellisense
 
 #### HTML
@@ -93,6 +97,5 @@
 
 #### JavaScript
 
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-* [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - Add support for linting JS files
+* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) - Vue.js tooling
