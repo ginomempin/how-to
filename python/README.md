@@ -77,7 +77,7 @@
     * [What are metaclasses?](https://stackoverflow.com/q/100003/2745495)
     * [How to use metaclasses?](https://realpython.com/python-metaclasses/)
 
-## Coding Convetions
+## Coding Conventions
 
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * [The Little Book of Python Anti-Patterns](https://docs.quantifiedcode.com/python-anti-patterns/index.html)

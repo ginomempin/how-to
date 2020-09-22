@@ -32,7 +32,7 @@
 * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - Auto-populate new files with template code
 * [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - Edit and run codes on remote machines or docker containers
 * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - Auto-create multiple Terminal windows on startup
-* [Path Intellisence](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - Auto-completion for filenames/paths
+* [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete) - Auto-completion of filenames
 * [vsc-rename-files](https://marketplace.visualstudio.com/items?itemName=alfnielsen.vsc-rename-files) - Rename multiple files
 
 ### Themes
