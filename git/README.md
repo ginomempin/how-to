@@ -1,6 +1,6 @@
 # git
 
-## The Official Documentation
+## Documentation
 
 * [The Git Book](https://git-scm.com/book/en/v2)
 * [List of Commands](https://git-scm.com/docs)
@@ -20,22 +20,24 @@
 
 ## Configuration
 
-### .gitignore
-
-* [.gitignore templates](https://github.com/github/gitignore)
-
 ### .gitconfig
+
+Set these as the global configuration then override per repository.
 
 * [For Linux or Mac](./unix/config)
 * [For Windows](./windows/config)
 
-### Identity
+#### Signing Commits with GPG
 
 * [Signing commits with GPG](https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e#using-gpg)
 * gpg-agent.conf
     * [For Linux or Mac](./unix/gpg-agent.conf)
 
-### Line Endings
+#### Handling Line Endings
 
 * [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
     * How to ensure that Git does not screw up your code when working on Linux or Mac (which uses `LF`) and on Windows (which uses `CRLF`)
+
+### .gitignore
+
+* [.gitignore templates](https://github.com/github/gitignore)

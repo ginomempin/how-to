@@ -17,7 +17,6 @@
 [merge]
     ff = false
 [commit]
-    template = ~/.gitmessage
     gpgsign = true
 [alias]
     b = branch --all
@@ -29,10 +28,11 @@
     pl = pull -v
     ps = push
     tl = tag -l --sort=-creatordate --format='%(creatordate:short) | %(refname)'
+    whereami = show --oneline -s
     whenadded = log --diff-filter=A
     checkmerge = diff HEAD HEAD^1
     hide = update-index --assume-unchanged
     unhide = update-index --no-assume-unchanged
     hidden = !git ls-files -v | grep "^[a-z]"
 [gpg]
-    program = gpg2
+    program = gpg
