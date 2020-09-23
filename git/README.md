@@ -39,3 +39,7 @@ Normally, we set a global configuration, then override for repo-specific setting
 ### .gitignore
 
 * [.gitignore templates](https://github.com/github/gitignore)
+
+### .githooks
+
+* [prepare-commit-msg](./hooks/prepare-commit-msg)

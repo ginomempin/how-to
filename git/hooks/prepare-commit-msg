@@ -1,0 +1,67 @@
+#!/bin/bash
+
+function addPrefix
+{
+    # By default, we don't add anything to the commit
+    # message (use whatever is the configured default,
+    # which is usually blank)
+    PREFIX=
+
+    # Parse a project-specific ticket number from the
+    # branch name, ex: feature/APP-1234
+    BRANCH_DESC=$(git show --oneline -s)
+    if [[ "${BRANCH_DESC}" =~ ^.*(PROJECT-[0-9]+).*$ ]]
+    then
+        # Use the parsed ticket info as the prefix.
+        # Ex. APP-1234: Fix crash on startup
+        PREFIX="${BASH_REMATCH[1]}:"
+    fi
+
+    # Replace the original commit message.
+    # Note we use '|' as the sed delimiter to support
+    # prefixes that include branch names with '/'
+    sed -i ".bak" "1s|^|${PREFIX} |" "${1}"
+}
+
+
+# The hook receives 3 arguments:
+# - The first is the name of the file that contains the commit log message.
+# - The second is the source of the commit message, and can be:
+#   * message (if a -m or -F option was given)
+#   * template (if a -t option was given or the configuration option commit.template is set)
+#   * merge (if the commit is a merge or a .git/MERGE_MSG file exists)
+#   * squash (if a .git/SQUASH_MSG file exists)
+#   * commit, followed by a commit SHA-1 (if a -c, -C or --amend option was given).
+#
+# https://mirrors.edge.kernel.org/pub/software/scm/git/docs/githooks.html
+case "${2},${3}" in
+    # Commit with -m "message" option
+    # Use passed-in commit message
+    message,)
+    ;;
+
+    # Commit with -t option
+    # Use provided template
+    template,)
+    ;;
+
+    # Merge commits
+    # Use git default behavior
+    merge,)
+    ;;
+
+    # Squash commits
+    # Use git default behavior
+    squash,)
+    ;;
+
+    # Commit with --amend option
+    # Use previous commit message
+    commit,?*)
+    ;;
+
+    # Plain commit
+    *)
+        addPrefix "${1}"
+    ;;
+esac
