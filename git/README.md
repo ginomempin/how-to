@@ -22,16 +22,14 @@
 
 ### .gitconfig
 
-Set these as the global configuration then override per repository.
+Normally, we set a global configuration, then override for repo-specific settings.
 
-* [For Linux or Mac](./unix/config)
-* [For Windows](./windows/config)
+* [Global Configuration (~/.git/config)](./config-global/config)
 
 #### Signing Commits with GPG
 
 * [Signing commits with GPG](https://gist.github.com/troyfontaine/18c9146295168ee9ca2b30c00bd1b41e#using-gpg)
-* gpg-agent.conf
-    * [For Linux or Mac](./unix/gpg-agent.conf)
+* [GPG Configuration](./config-gpg/gpg-agent.conf)
 
 #### Handling Line Endings
 
