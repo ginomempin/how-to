@@ -9,8 +9,8 @@ function addPrefix
 
     # Parse a project-specific ticket number from the
     # branch name, ex: feature/APP-1234
-    BRANCH_DESC=$(git show --oneline -s)
-    if [[ "${BRANCH_DESC}" =~ ^.*(PROJECT-[0-9]+).*$ ]]
+    BRANCH_NAME=$(git branch --show-current)
+    if [[ "${BRANCH_NAME}" =~ ^.*(PROJECT-[0-9]+).*$ ]]
     then
         # Use the parsed ticket info as the prefix.
         # Ex. APP-1234: Fix crash on startup
