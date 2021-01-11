@@ -58,32 +58,31 @@
 
     // Indentation
     //
-    // Always use spaces.
-    // Tabs will insert 4 spaces.
+    // * Always use spaces.
+    // * Tabs will insert 4 spaces.
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
 
     // Minimap
-    "editor.minimap.enabled": true,
-    "editor.minimap.maxColumn": 120,
-    "editor.minimap.scale": 2,
+    "editor.minimap.enabled": false,
 
     // Word Wrapping
     //
-    // Set max line length to 120.
-    // Wrapped lines are visually indented.
+    // * Set max line length to 120.
+    // * Wrapped lines are visually indented.
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "indent",
 
     // File Explorer
     //
-    // List files first before folders.
-    // Show indent guides to visually see which files belong
-    // to which folder.
-    // Do not use Java IDE style of compacting empty folders
-    // or folders with only one child (ex. app/libs/utils).
+    // * List files first before folders.
+    // * Show indent guides to visually see which files belong
+    //   to which folder.
+    // * Do not use Java IDE style of compacting empty folders
+    //   or folders with only one child (ex. app/libs/utils).
+    "explorer.autoReveal": "focusNoScroll",
     "explorer.compactFolders": false,
     "explorer.sortOrder": "filesFirst",
     "workbench.list.horizontalScrolling": true,
@@ -91,26 +90,30 @@
 
     // Editor Tabs
     //
-    // Do not close files which have been deleted outside of
-    // VS Code (serves like a backup for accidental deletion).
-    // Do show tabs which have been modified.
-    // Do not put a limit on open tabs.
-    // Do open the tab on the last scroll position.
+    // * Do not close files which have been deleted outside of
+    //   VS Code (serves like a backup for accidental deletion).
+    // * Do not use Preview when using Quick Open
+    // * Do show tabs which have been modified.
+    // * Do not put a limit on open tabs.
+    // * Do open the tab on the last scroll position.
+    // * Do compact pinned tabs to only show the icon
     "workbench.editor.closeOnFileDelete": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.labelFormat": "short",
     "workbench.editor.limit.enabled": false,
     "workbench.editor.openPositioning": "last",
+    "workbench.editor.pinnedTabSizing": "compact",
     "workbench.editor.restoreViewState": false,
 
     // Problems
     //
-    // Show problem of current line in status bar
+    // * Show problem of current line in status bar
     "problems.showCurrentInStatus": true,
 
     // Terminal
     //
-    // Always open terminal in current workspace folder
+    // * Always open terminal in current workspace folder
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.cursorBlinking": true,
@@ -122,12 +125,12 @@
 
     // Version Control
     //
-    // Enable sigining git commits with GPG.
-    // Disable built-in validation of commit messages.
-    // Disable force pushing.
-    // Disable version control of submodules.
+    // * Enable sigining git commits with GPG.
+    // * Disable built-in validation of commit messages.
+    // * Disable force pushing.
+    // * Auto-detect git submodules.
     "git.alwaysShowStagedChangesResourceGroup": true,
-    "git.detectSubmodules": false,
+    "git.detectSubmodules": true,
     "git.enableCommitSigning": true,
     "git.inputValidation": "off",
     "git.inputValidationLength": 140,
@@ -138,7 +141,7 @@
     "files.saveConflictResolution": "askUser",
     "scm.defaultViewMode": "tree",
 
-    // General Syntax
+    // Brackets
     "editor.matchBrackets": "near",
 
     // Markdown Linting
@@ -146,7 +149,6 @@
     "markdownlint.config": {
         "MD007": false,
         "MD014": false,
-        "MD024": false,
         "MD026": false,
         "MD031": false,
         "MD032": false,
@@ -154,48 +156,47 @@
         "MD040": false
     },
 
-    // HTML
-    //
-    // Enable HTML mirror cursor (https://code.visualstudio.com/updates/v1_41#_html-mirror-cursor)
-    "html.mirrorCursorOnMatchingTag": true,
-
     // Python Intellisense
     //
-    // Use Microsoft's Python Analysis Engine which,
-    // for most use cases, is faster than Jedi.
-    // See: https://devblogs.microsoft.com/python/python-in-visual-studio-code-june-july-2018-release/
-    "python.jediEnabled": false,
+    // Use Pylance.
+    // See: https://devblogs.microsoft.com/python/announcing-pylance-fast-feature-rich-language-support-for-python-in-visual-studio-code/
+    "python.languageServer": "Pylance",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.completeFunctionParens": false,
+    "python.analysis.diagnosticMode":"openFilesOnly",
+    "python.analysis.typeCheckingMode": "off",  // Set per workspace
 
-    // Python Linting
+    // Python Linting and Formatting
     //
-    // For pylint, enable all warnings (UseMinimalCheckers=false)
-    // then manually disable/ignore specific ones. This provides
-    // more control over the default where pylint will enable or
-    // disable "normal use case" settings.
-    "python.linting.pycodestyleEnabled": true,
-    "python.linting.pycodestyleArgs": [
-        "--ignore=E116,E201,E202,E203,E221,E402,E501"
-    ],
-    "python.linting.pylintEnabled": true,
+    // Use flake8 and mypy
+    "[python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": false  // Use each project's isort config
+        },
+        "editor.formatOnSave": true
+    },
+    "python.linting.pylintEnabled": false,
     "python.linting.pylintUseMinimalCheckers": false,
-    "python.linting.pylintCategorySeverity.convention": "Hint",
-    "python.linting.pylintArgs": [
-        "--disable=bad-whitespace",
-        "--disable=bare-except",
-        "--disable=fixme",
-        "--disable=global-statement",
-        "--disable=invalid-name",
-        "--disable=len-as-condition",
-        "--disable=missing-docstring",
-        "--disable=redefined-outer-name",
-        "--disable=superfluous-parens"
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Path": "/usr/local/bin/flake8",
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyPath": "/usr/local/bin/mypy",
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--follow-imports=silent",
+        "--show-column-numbers",
+        "--show-error-codes"
     ],
 
     // Python AutoDocstring
     "autoDocstring.docstringFormat": "sphinx",
     "autoDocstring.generateDocstringOnEnter": true,
     "autoDocstring.guessTypes": true,
-    "autoDocstring.startOnNewLine": true,
+    "autoDocstring.includeExtendedSummary": true,
+    "autoDocstring.includeName": false,
+    "autoDocstring.startOnNewLine": false,
+    "autoDocstring.quoteStyle": "\"\"\"",
 
     // Javascript Linting
     //
@@ -205,7 +206,6 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": false
     },
-    "eslint.enable": true,
     "eslint.format.enable": true,
     "eslint.lintTask.enable": true,
     "eslint.probe": [

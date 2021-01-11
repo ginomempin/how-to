@@ -30,10 +30,11 @@
 * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Use colors to mark indentation levels
 * [Comment Divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) - Divide code into sections with comment headers
 * [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - Auto-populate new files with template code
-* [Remote Development](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) - Edit and run codes on remote machines or docker containers
 * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - Auto-create multiple Terminal windows on startup
 * [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete) - Auto-completion of filenames
+* [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - Auto-completion of filenames
 * [vsc-rename-files](https://marketplace.visualstudio.com/items?itemName=alfnielsen.vsc-rename-files) - Rename multiple files
+* [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare) - Collaborative editing and debugging
 
 ### Themes
 
@@ -80,6 +81,7 @@
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - Adds support for linting, debugging, intellisense, syntax highlighting
     * [How to configure linting and formatting of Python files?](https://code.visualstudio.com/docs/python/linting)
     * [How to specify path to virtual environments?](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
+* [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Language server for the Python extension on VS Code
 * [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Auto-fill the docstring
 * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Adds docstring templates
 
