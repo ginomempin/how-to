@@ -34,41 +34,13 @@
         "command": "workbench.action.terminal.focusPrevious"
     },
     {
-        "key": "cmd+r",
-        "command": "workbench.action.debug.start",
-        "when": "!inDebugMode"
-    },
-    {
-        "key": "ctrl+cmd+r",
-        "command": "workbench.action.debug.run"
-    },
-    {
-        "key": "ctrl+f5",
-        "command": "-workbench.action.debug.run"
-    },
-    {
         "key": "f5",
-        "command": "-workbench.action.debug.start",
-        "when": "!inDebugMode"
-    },
-    {
-        "key": "f5",
-        "command": "-workbench.action.debug.continue",
-        "when": "inDebugMode"
+        "command": "workbench.action.debug.selectandstart",
+        "when": "debuggersAvailable && debugState == 'inactive'"
     },
     {
         "key": "shift+f5",
         "command": "-workbench.action.debug.stop",
         "when": "inDebugMode"
-    },
-    {
-        "key": "shift+cmd+f5",
-        "command": "-workbench.action.debug.restart",
-        "when": "inDebugMode"
-    },
-    {
-        "key": "cmd+r",
-        "command": "-workbench.action.reloadWindow",
-        "when": "isDevelopment"
     }
 ]
