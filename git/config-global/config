@@ -19,6 +19,7 @@
 [commit]
     gpgsign = true
 [alias]
+    co = "!git checkout $(git branch | fzf | tr -d '[:space:]')"
     b = branch --all
     ss = status -b --short
     sl = status --long --ignored
@@ -28,6 +29,7 @@
     pl = pull -v
     ps = push
     tl = tag -l --sort=-creatordate --format='%(creatordate:short) | %(refname)'
+    rb = rebase --stat
     pristine = !git reset --hard && git clean -f
     whereami = show --oneline -s
     whenadded = log --diff-filter=A
@@ -38,3 +40,5 @@
     gone = "!git fetch -p && for b in $(git for-each-ref --format='%(if:equals=[gone])%(upstream:track)%(then)%(refname:short)%(end)' refs/heads); do git branch -D $b; done"
 [gpg]
     program = gpg
+[init]
+    defaultBranch = master
