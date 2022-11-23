@@ -1,46 +1,90 @@
 [
-    {
-        "key": "cmd+left",
-        "command": "workbench.action.navigateBack"
-    },
-    {
-        "key": "cmd+right",
-        "command": "workbench.action.navigateForward"
-    },
-    {
-        "key": "ctrl+PageDown",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+PageUp",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "ctrl+shift+pagedown",
-        "command": "workbench.action.terminal.focus",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+pageup",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
-    },
-    {
-        "key": "ctrl+shift+down ctrl+shift+down",
-        "command": "workbench.action.terminal.focusNext"
-    },
-    {
-        "key": "ctrl+shift+up ctrl+shift+up",
-        "command": "workbench.action.terminal.focusPrevious"
-    },
-    {
-        "key": "f5",
-        "command": "workbench.action.debug.selectandstart",
-        "when": "debuggersAvailable && debugState == 'inactive'"
-    },
-    {
-        "key": "shift+f5",
-        "command": "-workbench.action.debug.stop",
-        "when": "inDebugMode"
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+PageDown",
+    "command": "workbench.action.nextEditor"
+  },
+  {
+    "key": "ctrl+shift+left",
+    "command": "moveActiveEditor",
+    "args": {
+      "to": "left"
     }
+  },
+  {
+    "key": "ctrl+PageUp",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    "key": "ctrl+shift+right",
+    "command": "moveActiveEditor",
+    "args": {
+      "to": "right"
+    }
+  },
+  {
+    "key": "ctrl+shift+down ctrl+shift+down",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+shift+up ctrl+shift+up",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "ctrl+shift+pagedown",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+pageup",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.debug.selectandstart",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "shift+f5",
+    "command": "-workbench.action.debug.stop",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+o",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "cmd+g",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "alt+cmd+f",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "cmd+t cmd+e",
+    "command": "workbench.action.toggleEditorWidths"
+  }
 ]

@@ -29,7 +29,6 @@
     * Distinguishes between letter I's and letter L's
 * [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) - Use colors to mark indentation levels
 * [Comment Divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) - Divide code into sections with comment headers
-* [File Template](https://marketplace.visualstudio.com/items?itemName=RalfZhang.filetemplate) - Auto-populate new files with template code
 * [Terminals Manager](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-terminals) - Auto-create multiple Terminal windows on startup
 * [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete) - Auto-completion of filenames
 * [Path Intellisense](https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense) - Auto-completion of filenames
@@ -45,11 +44,11 @@
 
 * [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) - Lint Markdown files
 * [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) - Export Markdown files to PDF or HTML
-* [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml) - Preview  and export PlantUML diagrams
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) - Finds and lists all the `TODO` comments from your codes
 
 ### Configurations
 
+* [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv) - Adds support for .env files
 * [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) - Adds validation, completion, and formatting of YAML files
 
 ### Source Control
@@ -57,16 +56,7 @@
 #### Git
 
 * [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph) - View history and diffs from a tree-like UI
-* [Git Blame](https://marketplace.visualstudio.com/items?itemName=waderyan.gitblame) - Click to show `git blame` info for specific lines
 * [gitignore](https://marketplace.visualstudio.com/items?itemName=codezombiech.gitignore) - Add .gitignore from [github/gitignore](https://github.com/github/gitignore) repo
-
-### Docker
-
-* [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) - Manage Docker images/containers right from VS Code
-
-### Kubernetes
-
-* [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) - Manage K8 clusters and adds intellisense for resources
 
 ### Language/Technology-Specific
 
@@ -76,14 +66,22 @@
 * [Bash Debug](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) - Adds launch configurations for bash scripts
 * [shellcheck](https://marketplace.visualstudio.com/items?itemName=timonwong.shellcheck) - Linter and static analysis tool
 
+### Docker
+
+* [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker) - Manage Docker images/containers right from VS Code
+
+### Kubernetes
+
+* [Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-kubernetes-tools.vscode-kubernetes-tools) - Manage K8 clusters and adds intellisense for resources
+
 #### Python
 
 * [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) - Adds support for linting, debugging, intellisense, syntax highlighting
     * [How to configure linting and formatting of Python files?](https://code.visualstudio.com/docs/python/linting)
     * [How to specify path to virtual environments?](https://code.visualstudio.com/docs/python/environments#_where-the-extension-looks-for-environments)
 * [Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance) - Language server for the Python extension on VS Code
-* [Python Docstring Generator](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Auto-fill the docstring
 * [autoDocstring](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring) - Adds docstring templates
+* [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort) - Organize imports using `isort`
 
 #### C++
 
