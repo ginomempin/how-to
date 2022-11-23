@@ -7,6 +7,7 @@ A collection of links to tutorials, templates, tools, and other helpful resource
 * [Heroku](./heroku/README.md)
 * [HTML/CSS](./html/README.md)
 * [iOS](./ios/README.md)
+* [Kubernetes](./kubernetes/README.md)
 * [JavaScript](./javascript/README.md)
 * [Markdown](./markdown/README.md)
 * [Nginx](./nginx/README.md)
