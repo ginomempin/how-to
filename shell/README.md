@@ -18,9 +18,10 @@
 
 ## CLI Tools
 
+* [fzf](https://github.com/junegunn/fzf) - Fuzzy-finder support for the command line
+* [gron](https://github.com/tomnomnom/gron) - Flattens JSON to make them `grep`-able
 * [jq](https://stedolan.github.io/jq/) - CLI for parsing JSON
 * [yq](https://github.com/mikefarah/yq) - CLI for parsing YAML
-* [gron](https://github.com/tomnomnom/gron) - Flattens JSON to make them `grep`-able
 
 ## Static Analysis Tools
 
