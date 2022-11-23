@@ -8,5 +8,6 @@
 
 ## Tools
 
+* [dive](https://github.com/wagoodman/dive) - For exploring Docker image layers
 * [Portus](http://port.us.org/) - Setup a locally-hosted web app for managing Docker images
 * [lazydocker](https://github.com/jesseduffield/lazydocker) - Console-based dashboard
