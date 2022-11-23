@@ -18,7 +18,7 @@
 1. Setup and use a [virtual environment](https://packaging.python.org/tutorials/installing-packages/#creating-virtual-environments)
     * There are [many different modules](https://stackoverflow.com/q/41573587/2745495) for creating a virtual environment
     * If Python 2 support is needed, use the [virtualenv](https://virtualenv.pypa.io/en/stable/) module
-    * If Python 3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) or [pipenv](https://pypi.org/project/pipenv/)
+    * If Python 3 only, use the built-in [venv](https://docs.python.org/3/library/venv.html) or [poetry](https://python-poetry.org/)
         * For `venv`
             * Set `VENV_DIR` to directory for virtual environments (ex. `$HOME/.venvs`)
             * Copy the [bash aliases for using venv](../bash/bash_aliases)
@@ -27,9 +27,9 @@
                 * `dnvenv`
                 * `rmvenv PROJECT_NAME`
                 * `lsvenv`
-        * For `pipenv`
-            * Set `WORKON_HOME` to directory for virtual environments (ex. `$HOME/.venvs`)
-            * [How to set `pipenv shell` prompt to match the Terminal's PS1 prompt?](https://stackoverflow.com/q/54922550/2745495)
+        * For `poetry`
+            * Set [`poetry config cache-dir`](https://python-poetry.org/docs/configuration/#cache-dir)
+
 1. For each Python project
     * For `virtualenv` and `venv`
         * Create/Activate a virtual environment
@@ -47,23 +47,26 @@
             $ pip install -r requirements.txt
 
             ```
-    * For `pipenv`
-        * Create/Activate a virtual environment
+    * For `poetry`
+        * Specify the Python version to use
             ```shell
-            $ pipenv --python=/path/to/python
-
+            $ cd <project>
+            $ poetry env use python3
+            $ poetry env use python3.X # 3.7, 3.8, 3.9, 3.10, 3.11
             ```
-        * Create a `Pipfile`
+        * Initialize the project
             ```shell
-            $ pipenv install PACKAGE
-            $ pipenv install --dev PACKAGE
-
+            $ poetry init
             ```
-        * Commit the generated `Pipfile` and `Pipfile.lock`
-        * When switching environments:
+        * Install packages
             ```shell
-            $ pipenv sync
-
+            $ poetry add <package>
+            $ pipenv add --dev PACKAGE
+            ```
+        * Commit the generated `pyproject.toml` and `poetry.lock`
+        * Activate the environment
+            ```shell
+            $ poetry shell
             ```
 
 ## FAQ
