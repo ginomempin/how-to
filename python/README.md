@@ -93,14 +93,14 @@
 
 ### Linters
 
-* [pydocstyle](https://pypi.org/project/pydocstyle/)
-* [mypy](http://mypy-lang.org/)
-* [flake8](https://flake8.pycqa.org/en/latest/)
+* [bandit](https://bandit.readthedocs.io/en/latest/) - security issues
+* [flake8](https://flake8.pycqa.org/en/latest/) - PEP8 issues
+* [mypy](http://mypy-lang.org/) - typing issues
+* [mccabe](https://github.com/PyCQA/mccabe) - complexity checker
 
 ### Formatters
 
-* [black](https://github.com/psf/black)
-* [yapf](https://github.com/google/yapf)
+* [black](https://github.com/psf/black) - no-config, opinioniated formatter
 
 ### Terminal
 
@@ -110,11 +110,17 @@
 
 * [colorama](https://pypi.org/project/colorama/) - Cross-platform colorizer for console logs
 * [click](https://click.palletsprojects.com) - For creating CLI-based applications
+* [typer](https://typer.tiangolo.com/) - For creating CLI-based applications with type-hinting support
 * [tqdm](https://tqdm.github.io/) - For better progress bars and loop tracking
 
 ### Web Application
 
 * [flask](https://flask.palletsprojects.com/) - Lightweight web application framework
+* [fastapi](https://fastapi.tiangolo.com/) - Modern framework with async support, type-hints, and auto-generated documentation
+
+### Data Validation
+
+* [pydantic](https://pydantic-docs.helpmanual.io/) - Data validation through type hints
 
 ### Data Visualization
 
